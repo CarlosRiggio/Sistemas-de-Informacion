@@ -1,0 +1,15 @@
+Admin:
+Crear: espectaculo, recinto, evento, gradas, localidades.
+Eliminar: localidades, gradas.
+Cambiar estado: evento, localidad.
+Ofertar localidades --> evento que oferta +estado
+
+Usuario:
+Consultar: eventos abiertos, entradas segun tipo, comprar entradas, anular compra
+
+
+Ruwu-> Crear/Eliminar localidades
+Santi-> Crear/Cambiar estado Evento
+Juan-> Crear Recinto y Espectaculo
+Rubito-> Cambiar estado localidad y ofertar localidades
+Riggio-> Crear/Eliminar Gradas

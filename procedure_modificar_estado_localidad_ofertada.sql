@@ -1,0 +1,11 @@
+drop procedure if exists cambiarestadoLocalidadOfertada;
+DELIMITER &&
+CREATE PROCEDURE cambiarestadoLocalidadOfertada(IN nuevoEstado CHAR(50), in recinto CHAR(50), IN grada CHAR(50), IN localizacion CHAR(50))
+BEGIN
+
+IF(nuevoEstado IN('libre','deteriorado','reservado','pre-reservado')) THEN
+UPDATE Oferta SET estado_localidad_ofertada=nuevoEstado WHERE nombre_grada_oferta=grada AND localizacion_localidad_oferta=localizacion AND nombre_recinto_oferta=recinto;
+END IF;
+END 
+&&/*no usar el mismo nombre para los parametros que para las columnas de las tablas -> los confundira*/
+DELIMITER ;

@@ -1,6 +1,6 @@
 drop procedure if exists crearOferta;
 DELIMITER &&
-CREATE PROCEDURE crearOferta(IN nombreEspectaculo CHAR(50), IN nombreRecinto CHAR(50), IN tipoUsuarioOfertado CHAR(50), IN localizacionLocalidad CHAR(50), IN nombreGrada CHAR(50))
+CREATE PROCEDURE crearOferta(IN nombreEspectaculo CHAR(50), IN nombreRecinto CHAR(50), IN fechaEvento DATETIME, IN tipoUsuarioOfertado CHAR(50), IN localizacionLocalidad CHAR(50), IN nombreGrada CHAR(50))
 BEGIN
 DECLARE done BOOLEAN;
 DECLARE valido BOOLEAN;
@@ -10,7 +10,7 @@ DECLARE cursito CURSOR FOR (SELECT nombre_recinto_localidad FROM Localidad WHERE
 DECLARE CONTINUE HANDLER FOR NOT FOUND SET done=TRUE;
 SET valido = FALSE;
 SET done = FALSE;
-SELECT nombre_espectaculo_evento INTO consulta from Evento where nombre_recinto_evento = nombreRecinto and nombre_espectaculo_evento=nombreEspectaculo;
+SELECT nombre_espectaculo_evento INTO consulta from Evento where nombre_recinto_evento = nombreRecinto and nombre_espectaculo_evento=nombreEspectaculo and fecha_evento=fechaEvento;
 SELECT(consulta);
 OPEN cursito;
 

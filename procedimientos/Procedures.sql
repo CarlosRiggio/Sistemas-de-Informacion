@@ -17,6 +17,7 @@ DROP PROCEDURE IF EXISTS crearOferta;
 DROP PROCEDURE IF EXISTS crear_gradas;
 DROP PROCEDURE IF EXISTS crear_espectaculo;
 DROP PROCEDURE IF EXISTS CrearEvento;
+
 DROP PROCEDURE IF EXISTS Error;
 
 
@@ -119,9 +120,15 @@ END //
 
 
 
-CREATE PROCEDURE crear_gradas(IN nombre_grada_in VARCHAR(50), IN nombre_recinto_grada_in VARCHAR(50), num_localidades_reservar_grada_in int, precio_grada_in int)
+CREATE PROCEDURE crear_gradas(
+    IN nombre_grada_in VARCHAR(50), 
+    IN nombre_recinto_grada_in VARCHAR(50), 
+    IN num_localidades_reservar_grada_in INT, 
+    IN precio_grada_in INT
+)
 BEGIN
-INSERT INTO Grada(nombre_grada, nombre_recinto_grada, num_localidades_reservar_grada, precio_grada) VALUES (nombre_grada_in, nombre_recinto_grada_in, num_localidades_reservar_grada_in, precio_grada_in);
+    INSERT INTO Grada (nombre_grada, nombre_recinto_grada, num_localidades_reservar_grada, precio_grada) 
+    VALUES (nombre_grada_in, nombre_recinto_grada_in, num_localidades_reservar_grada_in, precio_grada_in);
 END //
 
 
@@ -131,60 +138,55 @@ CREATE PROCEDURE AgregarLocalidad(
     IN nombre_recinto_localidad VARCHAR(50),
     IN nombre_grada_localidad VARCHAR(50),
     IN precio_base_localidad INT,
-    IN estado_localidad ENUM ('pre-reservado', 'reservado', 'deteriorado', 'libre')
+    IN estado_localidad VARCHAR(20) ENUM ('disponible', 'no disponible')
 )
 BEGIN
-    INSERT INTO Localidad (
-        localizacion_localidad,
-        nombre_recinto_localidad,
-        nombre_grada_localidad,
-        precio_base_localidad,
-        estado_localidad
-    ) VALUES (
-        localizacion_localidad,
-        nombre_recinto_localidad,
-        nombre_grada_localidad,
-        precio_base_localidad,
-        estado_localidad
-    );
+    INSERT INTO Localidad (localizacion_localidad, nombre_recinto_localidad, nombre_grada_localidad, precio_base_localidad, estado_localidad) 
+    VALUES (localizacion_localidad, nombre_recinto_localidad, nombre_grada_localidad, precio_base_localidad, estado_localidad);
 END //
 
 
 
-CREATE PROCEDURE crearOferta(IN nombreEspectaculo CHAR(50), IN nombreRecinto CHAR(50), IN fechaEvento DATETIME, IN tipoUsuarioOfertado CHAR(50), IN localizacionLocalidad CHAR(50), IN nombreGrada CHAR(50))
+CREATE PROCEDURE crearOferta(
+    IN nombreEspectaculo CHAR(50), 
+    IN nombreRecinto CHAR(50), 
+    IN fechaEvento DATETIME, 
+    IN tipoUsuarioOfertado CHAR(50), 
+    IN localizacionLocalidad CHAR(50), 
+    IN nombreGrada CHAR(50)
+)
 BEGIN
-DECLARE done BOOLEAN;
-DECLARE valido BOOLEAN;
-DECLARE consulta VARCHAR(50);
-DECLARE recinto VARCHAR(100);
-DECLARE cursito CURSOR FOR (SELECT nombre_recinto_localidad FROM Localidad WHERE localizacion_localidad=localizacionLocalidad AND nombre_grada_localidad=nombreGrada);
-DECLARE CONTINUE HANDLER FOR NOT FOUND SET done=TRUE;
-SET valido = FALSE;
-SET done = FALSE;
-SELECT nombre_espectaculo_evento INTO consulta from Evento where nombre_recinto_evento = nombreRecinto and nombre_espectaculo_evento=nombreEspectaculo and fecha_evento=fechaEvento;
-SELECT(consulta);
-OPEN cursito;
+    DECLARE done BOOLEAN;
+    DECLARE valido BOOLEAN;
+    DECLARE consulta VARCHAR(50);
+    DECLARE recinto VARCHAR(100);
+    DECLARE cursito CURSOR FOR (SELECT nombre_recinto_localidad FROM Localidad WHERE localizacion_localidad=localizacionLocalidad AND nombre_grada_localidad=nombreGrada);
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done=TRUE;
+    SET valido = FALSE;
+    SET done = FALSE;
+    SELECT nombre_espectaculo_evento INTO consulta from Evento where nombre_recinto_evento = nombreRecinto and nombre_espectaculo_evento=nombreEspectaculo and fecha_evento=fechaEvento;
+    SELECT(consulta);
+    
+    OPEN cursito;
+        loop1:LOOP/*loop con etiqueta*/
+            FETCH cursito INTO recinto;/*saca el valor de la tupla de la busqueda y lo mete en codigo*/
+            SELECT(recinto);
+            IF done = TRUE THEN /*si no quedan mas tuplas, el handler se activara y pondra @done a true*/
+                LEAVE loop1;
+            ELSE 
+                IF recinto=nombreRecinto THEN/*hace una operacion en concreto sobre cada tupla del cursor*/
+                    IF consulta IS NOT NULL THEN
+                        SET valido = TRUE;
+                        LEAVE loop1;
+                    END IF;
+                END IF;
+            END IF;
+        END LOOP;
+    CLOSE cursito;
 
-loop1:LOOP/*loop con etiqueta*/
-FETCH cursito INTO recinto;/*saca el valor de la tupla de la busqueda y lo mete en codigo*/
-SELECT(recinto);
-IF done = TRUE THEN /*si no quedan mas tuplas, el handler se activara y pondra @done a true*/
-LEAVE loop1;
-ELSE 
-IF recinto=nombreRecinto THEN/*hace una operacion en concreto sobre cada tupla del cursor*/
-IF consulta IS NOT NULL THEN
-SET valido = TRUE;
-LEAVE loop1;
-END IF;
-END IF;
-END IF;
-END LOOP;
-
-CLOSE cursito;
-
-IF valido = TRUE THEN 
-INSERT INTO Oferta VALUES (nombreEspectaculo, nombreRecinto, tipoUsuarioOfertado, localizacionLocalidad, nombreGrada, 'libre');
-END IF;
+    IF valido = TRUE THEN 
+        INSERT INTO Oferta VALUES (nombreEspectaculo, nombreRecinto, tipoUsuarioOfertado, localizacionLocalidad, nombreGrada, 'libre');
+    END IF;
 
 END // /*no usar el mismo nombre para los parametros que para las columnas de las tablas -> los confundira*/
 
@@ -205,14 +207,20 @@ END //
 
 
 
-CREATE PROCEDURE eliminar_gradas(IN nombre_grada_in VARCHAR(50), IN nombre_recinto_grada_in VARCHAR(50), num_localidades_reservar_grada_in int, precio_grada_in int)
+CREATE PROCEDURE eliminar_gradas(
+    IN nombre_grada_in VARCHAR(50), 
+    IN nombre_recinto_grada_in VARCHAR(50), 
+    IN num_localidades_reservar_grada_in INT, 
+    IN precio_grada_in INT
+)
 BEGIN
 
-DELETE FROM Grada
-WHERE nombre_grada = nombre_grada_in AND
-    nombre_recinto_grada = nombre_recinto_grada_in AND
-    num_localidades_reservar_grada = num_localidades_reservar_grada_in AND
-    precio_grada = precio_grada_in;
+    DELETE * FROM Grada
+    WHERE nombre_grada = nombre_grada_in AND
+        nombre_recinto_grada = nombre_recinto_grada_in AND
+        num_localidades_reservar_grada = num_localidades_reservar_grada_in AND
+        precio_grada = precio_grada_in
+    ;
 
 END //
 
@@ -231,7 +239,9 @@ BEGIN
 END //
 
 
-CREATE PROCEDURE obtener_eventos_por_estado(IN estado_parametro ENUM('cerrado', 'finalizado', 'abierto'))
+CREATE PROCEDURE obtener_eventos_por_estado(
+    IN estado_parametro ENUM('cerrado', 'finalizado', 'abierto')
+)
 BEGIN
     SELECT nombre_espectaculo_evento, nombre_recinto_evento, fecha_evento, estado_evento
     FROM Evento
@@ -240,16 +250,18 @@ END //
 
 
 
-
-CREATE PROCEDURE cambiarestadoLocalidadOfertada(IN nuevoEstado CHAR(50), in recinto CHAR(50), IN grada CHAR(50), IN localizacion CHAR(50))
+CREATE PROCEDURE cambiarestadoLocalidadOfertada(
+    IN nuevoEstado CHAR(50), 
+    IN recinto CHAR(50), 
+    IN grada CHAR(50), 
+    IN localizacion CHAR(50)
+)
 BEGIN
 
 IF(nuevoEstado IN('libre','deteriorado','reservado','pre-reservado')) THEN
 UPDATE Oferta SET estado_localidad_ofertada=nuevoEstado WHERE nombre_grada_oferta=grada AND localizacion_localidad_oferta=localizacion AND nombre_recinto_oferta=recinto;
 END IF;
 END // /*no usar el mismo nombre para los parametros que para las columnas de las tablas -> los confundira*/
-
-
 
 
 

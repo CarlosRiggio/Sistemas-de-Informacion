@@ -39,7 +39,7 @@ CREATE TABLE Grada
 CREATE TABLE Usuario 
 (
     tipo_usuario ENUM ('jubilado', 'parado', 'adulto', 'infantil'),
-    descuento_usuario INT,
+    descuento_usuario FLOAT,
     PRIMARY KEY (tipo_usuario)
 );
 

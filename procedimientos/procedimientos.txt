@@ -13,3 +13,20 @@ Santi-> Crear/Cambiar estado Evento
 Juan-> Crear Recinto y Espectaculo
 Rubito-> Cambiar estado localidad y ofertar localidades
 Riggio-> Crear/Eliminar Gradas
+
+
+
+
+INDICE Procedimientos 
+
+    cambiarestadoLocalidadOfertada      249
+    obtener_eventos_por_estado          238
+    EliminarLocalidad                   222
+    eliminar_gradas                     209
+    crearOferta                         155
+    AgregarLocalidad                    130
+    crear_gradas                        123
+    CrearEvento                         73
+    crear_espectaculo                   50
+    Error                               30
+    

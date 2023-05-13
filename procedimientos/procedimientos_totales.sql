@@ -281,7 +281,7 @@ END//
 
 DELIMITER ;
 
-CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'jubilado');
+CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
 
 
 INSERT INTO Usuario VALUES ('adulto', 0);
@@ -379,3 +379,4 @@ SELECT * FROM Recinto;
 SELECT * FROM Espectaculo;
 SELECT * FROM Evento;
 SELECT * FROM Oferta;
+SELECT * FROM Compra;

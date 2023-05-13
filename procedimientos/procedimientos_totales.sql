@@ -277,16 +277,6 @@ END//
 DELIMITER ;
 
 
-
-INSERT INTO Usuario VALUES ('adulto', 0);
-INSERT INTO Usuario VALUES ('parado', 10);
-INSERT INTO Usuario VALUES ('jubilado', 20);
-INSERT INTO Usuario VALUES ('infantil', 30);
-
-CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
-
-
-
 CREATE DATABASE IF NOT EXISTS Taquilla;
 USE Taquilla;
 
@@ -579,6 +569,13 @@ END//
 
 DELIMITER ;
 
+INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('123456789','1234567890123456789012345678901234');
+
+INSERT INTO Usuario VALUES ('adulto', 0);
+INSERT INTO Usuario VALUES ('parado', 10);
+INSERT INTO Usuario VALUES ('jubilado', 20);
+INSERT INTO Usuario VALUES ('infantil', 30);
+
 CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
 CALL crear_recinto('Camp Nou', 89000);
 CALL crear_gradas('Grada Norte', 'Camp Nou', 10000, 50);
@@ -597,3 +594,4 @@ SELECT * FROM Espectaculo;
 SELECT * FROM Evento;
 SELECT * FROM Oferta;
 SELECT * FROM Compra;
+SELECT * FROM Cliente;

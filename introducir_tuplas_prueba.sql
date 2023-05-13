@@ -22,3 +22,6 @@ INSERT INTO UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada
 INSERT INTO UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc) VALUES ('parado', '2', 'SUR', 'Camp Nou');
 INSERT INTO UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc) VALUES ('adulto', '3', 'SUR', 'Camp Nou');
 INSERT INTO UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc) VALUES ('infantil', '4', 'SUR', 'Camp Nou');
+
+INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('123456789','123456789');
+INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('987654321','987654321');

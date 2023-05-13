@@ -8,20 +8,18 @@ DELIMITER //
 
 CREATE PROCEDURE CalcularPrecio (
 
-    -- ! Como se supone que identificamos a los clientes con los usuarios?
-    -- ! Hay que cambiar las tablas con estados, porque los corta
+    -- ? Como se supone que identificamos a los clientes con los usuarios?
+    -- ? Los eventos modifican el precio base de las localidades?
+    -- ? Como identificamos a los clientes con sus entradas?
 
     -- Datos Grada      ---> IncrementoPrecio
     -- Datos Localidad  ---> PrecioBase
     -- Datos Usuario    ---> DescuentoPrecio
 
     IN nombreGrada VARCHAR(50),
-    IN nombreRecintoGrada VARCHAR(50),
-    IN tipoUsuario VARCHAR(30),
-
+    IN nombreRecinto VARCHAR(50),
     IN localizacionLocalidad VARCHAR(50),
-    IN nombreRecintoLocalidad VARCHAR(50),
-    IN nombreGradaLocalidad VARCHAR(50),
+    IN tipoUsuario VARCHAR(50),
     
     OUT precioFinal FLOAT
 
@@ -35,14 +33,14 @@ BEGIN
     SELECT precio_grada INTO incrementoPrecioGrada
     FROM Grada
     WHERE nombre_grada = nombreGrada AND
-        nombre_recinto_grada = nombreRecintoGrada
+        nombre_recinto_grada = nombreRecinto
     ;
 
     SELECT precio_base_localidad INTO precioBaseLocalidad 
     FROM Localidad
     WHERE localizacion_localidad = localizacionLocalidad AND
-        nombre_recinto_localidad = nombreRecintoLocalidad AND
-        nombre_grada_localidad = nombreGradaLocalidad
+        nombre_recinto_localidad = nombreRecinto AND
+        nombre_grada_localidad = nombreGrada
     ;
 
 
@@ -59,7 +57,8 @@ END //
 CREATE PROCEDURE ttt ()
 BEGIN
     DECLARE precio FLOAT;
-    CALL CalcularPrecio("Grada Norte", "Camp Nou", "parado", "Romero", "Camp Nou", "Grada Norte", precio);
+    -- CALL CalcularPrecio("Grada Norte", "Camp Nou", "parado", "Romero", "Camp Nou", "Grada Norte", precio);
+    CALL CalcularPrecio ("Grada Norte", "Camp Nou", "Romero", "parado", precio);
     SELECT precio AS message;
 END //
 

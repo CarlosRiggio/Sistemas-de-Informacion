@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS=0;
 
 DROP PROCEDURE IF EXISTS ComprarEntrada;
 DROP PROCEDURE IF EXISTS CalcularPrecio;
@@ -5,6 +6,16 @@ DROP PROCEDURE IF EXISTS ttt;
 
 
 DELIMITER //
+
+-- CREATE PROCEDURE ttt ()
+-- BEGIN
+--     DECLARE precio FLOAT;
+--     -- CALL CalcularPrecio("Grada Norte", "Camp Nou", "parado", "Romero", "Camp Nou", "Grada Norte", precio);
+--     CALL CalcularPrecio ("Grada Norte", "Camp Nou", "Romero", "parado", precio);
+--     SELECT precio AS message;
+-- END //
+
+
 
 CREATE PROCEDURE CalcularPrecio (
 
@@ -27,19 +38,18 @@ BEGIN
     DECLARE descuentoUsuario FLOAT;
 
     -- Check si existe dicha Infraestructura
-    IF ( (SELECT EXISTS(SELECT * FROM Recinto WHERE nombre_recinto = nombreRecinto) ) = '') THEN
+    IF ( (SELECT EXISTS(SELECT * FROM Recinto WHERE nombre_recinto = nombreRecinto) ) = 0) THEN
         CALL Error(2, "No existe dicho Recinto.");
     END IF;
 
-    IF ( (SELECT EXISTS(SELECT * FROM Grada WHERE nombre_grada = nombreGrada AND nombre_recinto_grada_in = nombreRecinto) ) = '') THEN
+    IF ( (SELECT EXISTS(SELECT * FROM Grada WHERE nombre_grada = nombreGrada AND nombre_recinto_grada = nombreRecinto) ) = 0) THEN
         CALL Error(6, "No existe dicha Grada.");
     END IF;
 
     IF ( (SELECT EXISTS(SELECT * FROM Localidad 
-    WHERE localizacion_localidad = localizacionLocalidad AND nombre_recinto_localidad = nombreRecinto AND nombre_grada_localidad = nombreGrada) ) = '') THEN
+    WHERE localizacion_localidad = localizacionLocalidad AND nombre_recinto_localidad = nombreRecinto AND nombre_grada_localidad = nombreGrada) ) = 0) THEN
         CALL Error(7, "No existe dicha Localidad.");
     END IF;
-
 
 
     SELECT precio_grada INTO incrementoPrecioGrada
@@ -60,19 +70,10 @@ BEGIN
     FROM Usuario
     WHERE tipo_usuario = tipoUsuario; 
 
-
     SET precioFinal = incrementoPrecioGrada * precioBaseLocalidad * descuentoUsuario;
 
 END // 
 
-
--- CREATE PROCEDURE ttt ()
--- BEGIN
---     DECLARE precio FLOAT;
---     -- CALL CalcularPrecio("Grada Norte", "Camp Nou", "parado", "Romero", "Camp Nou", "Grada Norte", precio);
---     CALL CalcularPrecio ("Grada Norte", "Camp Nou", "Romero", "parado", precio);
---     SELECT precio AS message;
--- END //
 
 
 CREATE PROCEDURE ComprarEntrada (
@@ -86,41 +87,42 @@ CREATE PROCEDURE ComprarEntrada (
     IN nombre_grada_ofertaIN VARCHAR(50),
     IN fecha_evento_ofertaIN DATETIME
 
+
 )
 BEGIN
     DECLARE precio FLOAT;
 
-    IF (SELECT * FROM Evento WHERE (
+    IF (SELECT EXISTS(SELECT * FROM Evento WHERE (
         nombre_espectaculo_evento = nombre_espectaculo_ofertaIN AND
-        nombre_recinto_evento = nombre_espectaculo_ofertaIN AND
+        nombre_recinto_evento = nombre_recinto_ofertaIN AND
         fecha_evento = fecha_evento_ofertaIN AND
         estado_evento = "abierto"
-    ) = '' ) THEN 
+    )) = 0 ) THEN 
         CALL Error (5, "Evento inexistente.");
     END IF;
 
-    IF ( SELECT * FROM Localidad WHERE (
+    IF (SELECT EXISTS (SELECT * FROM Localidad WHERE (
         localizacion_localidad = localizacion_localidad_ofertaIN AND
-        nombre_recinto_localidad = nombre_espectaculo_ofertaIN AND
+        nombre_recinto_localidad = nombre_recinto_ofertaIN AND
         nombre_grada_localidad = nombre_grada_ofertaIN AND
         estado_localidad = 'disponible'
-    ) = '') THEN
+    )) = 0) THEN
         CALL Error(8, "Localidad no disponible.");
     END IF;
 
-    IF (SELECT * FROM Oferta WHERE (
+    IF (SELECT EXISTS (SELECT * FROM Oferta WHERE (
         nombre_espectaculo_oferta = nombre_espectaculo_ofertaIN AND
         nombre_recinto_oferta = nombre_recinto_ofertaIN AND
         localizacion_localidad_oferta = localizacion_localidad_ofertaIN AND
-        nombre_grada_oferta = nombre_espectaculo_ofertaIN AND
+        nombre_grada_oferta = nombre_grada_ofertaIN AND
         fecha_evento_oferta = fecha_evento_ofertaIN AND
         estado_localidad_oferta = 'libre'
-    ) = '') THEN
+    )) = 0 ) THEN
         CALL Error (9, "No existen ofertas para esta localidad.");
     END IF;
 
-    
-    CALL CalcularPrecio (nombre_espectaculo_ofertaIN, nombre_recinto_ofertaIN, localizacion_localidad_ofertaIN, tipo_usuario_IN, precio);
+    CALL CalcularPrecio (nombre_grada_ofertaIN, nombre_recinto_ofertaIN, localizacion_localidad_ofertaIN, tipo_usuario_IN, precio);
+
 
     INSERT INTO Compra (
         dni_cliente_compra,
@@ -131,11 +133,11 @@ BEGIN
         precioFinal
     ) 
     Values (
-        dni_clienteIN,
+        dni_cliente_IN,
         tipo_usuario_IN,
         localizacion_localidad_ofertaIN,
         nombre_grada_ofertaIN,
-        nombre_recinto_compra,
+        nombre_recinto_compraIN,
         precio
     );
 
@@ -144,7 +146,7 @@ BEGIN
         nombre_espectaculo_oferta = nombre_espectaculo_ofertaIN AND
         nombre_recinto_oferta = nombre_recinto_ofertaIN AND
         localizacion_localidad_oferta = localizacion_localidad_ofertaIN AND
-        nombre_grada_oferta = nombre_espectaculo_ofertaIN AND
+        nombre_grada_oferta = nombre_grada_ofertaIN AND
         fecha_evento_oferta = fecha_evento_ofertaIN
     );
 

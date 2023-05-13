@@ -43,7 +43,12 @@ BEGIN
         nombre_recinto_evento = nombre_recinto_IN AND
         fecha_evento = fecha_evento_IN
     )) != '' ) THEN 
-        UPDATE Evento SET estado_evento = nuevoEstado;
+        UPDATE Evento SET estado_evento = nuevoEstado 
+        WHERE (
+            nombre_espectaculo_evento = nombre_espectaculo_IN AND
+            nombre_recinto_evento = nombre_recinto_IN AND
+            fecha_evento = fecha_evento_IN
+        );
     ELSE 
         CALL Error (5, "Evento inexistente.");
     END IF;

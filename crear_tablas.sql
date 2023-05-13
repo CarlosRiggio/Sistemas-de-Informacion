@@ -87,9 +87,12 @@ CREATE TABLE Oferta
     localizacion_localidad_oferta VARCHAR(50),
     nombre_grada_oferta VARCHAR(50),
     fecha_evento_oferta DATETIME,
+    dni_cliente_oferta VARCHAR(50) DEFAULT NULL,
     estado_localidad_oferta ENUM('pre-reservado', 'reservado', 'deteriorado', 'libre'),
     FOREIGN KEY(tipo_usuario_oferta, localizacion_localidad_oferta, nombre_grada_oferta, nombre_recinto_oferta) 
     REFERENCES UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc), -- add comma here
+
+    FOREIGN KEY(dni_cliente_oferta) REFERENCES Cliente(dni_cliente),
 
     PRIMARY KEY(nombre_espectaculo_oferta, nombre_recinto_oferta, tipo_usuario_oferta, localizacion_localidad_oferta, nombre_grada_oferta)  
 );

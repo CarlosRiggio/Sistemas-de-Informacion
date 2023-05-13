@@ -28,6 +28,8 @@ IF consulta IS NOT NULL THEN
 IF localidad = 'disponible' THEN
 SET valido = TRUE;
 LEAVE loop1;
+ELSE 
+SELECT 'No se creo la oferta' AS mensaje;
 END IF;
 END IF;
 END IF;

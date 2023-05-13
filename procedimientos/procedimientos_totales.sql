@@ -25,7 +25,6 @@ END//
 
 DELIMITER ;
 
-CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
 
 
 CREATE DATABASE IF NOT EXISTS Taquilla;
@@ -54,7 +53,6 @@ END//
 
 DELIMITER ;
 
-CALL crear_recinto('Camp Nou', 89000);
 
 
 USE Taquilla;
@@ -104,7 +102,6 @@ END//
 
 DELIMITER ;
 
-CALL crear_gradas('Grada Norte', 'Camp Nou', 10000, 50);
 
 
 CREATE DATABASE IF NOT EXISTS Taquilla;
@@ -163,7 +160,6 @@ END//
 
 DELIMITER ;
 
-CALL crear_localidad('Asiento 1', 'Camp Nou', 'Grada Norte', 50, 'disponible');
 
 CREATE DATABASE IF NOT EXISTS Taquilla;
 USE Taquilla;
@@ -250,7 +246,6 @@ END //
 
 DELIMITER ;
 
-CALL CrearEvento('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'Abierto');
 
 
 USE Taquilla;
@@ -281,7 +276,6 @@ END//
 
 DELIMITER ;
 
-CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
 
 
 INSERT INTO Usuario VALUES ('adulto', 0);
@@ -289,6 +283,7 @@ INSERT INTO Usuario VALUES ('parado', 10);
 INSERT INTO Usuario VALUES ('jubilado', 20);
 INSERT INTO Usuario VALUES ('infantil', 30);
 
+CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
 
 
 
@@ -367,8 +362,14 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL crearOferta('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
 
+CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
+CALL crear_recinto('Camp Nou', 89000);
+CALL crear_gradas('Grada Norte', 'Camp Nou', 10000, 50);
+CALL crear_localidad('Asiento 1', 'Camp Nou', 'Grada Norte', 50, 'disponible');
+CALL CrearEvento('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'Abierto');
+CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
 
 
 SELECT * FROM UsLoc;
@@ -380,3 +381,4 @@ SELECT * FROM Espectaculo;
 SELECT * FROM Evento;
 SELECT * FROM Oferta;
 SELECT * FROM Compra;
+

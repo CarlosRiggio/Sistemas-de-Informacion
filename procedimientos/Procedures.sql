@@ -82,7 +82,6 @@ CREATE PROCEDURE CrearEvento (
 BEGIN
     -- Pasos
     -- 
-    --  1. Declaramos variables
     --  2. Checkeamos si existen el Recinto y el Espectaculo
     --  3. Check Fecha T-T
     --  4. Check dato Estado en los datos de entrada
@@ -257,10 +256,9 @@ CREATE PROCEDURE cambiarestadoLocalidadOfertada(
     IN localizacion CHAR(50)
 )
 BEGIN
-
-IF(nuevoEstado IN('libre','deteriorado','reservado','pre-reservado')) THEN
-UPDATE Oferta SET estado_localidad_ofertada=nuevoEstado WHERE nombre_grada_oferta=grada AND localizacion_localidad_oferta=localizacion AND nombre_recinto_oferta=recinto;
-END IF;
+    IF(nuevoEstado IN('libre','deteriorado','reservado','pre-reservado')) THEN
+        UPDATE Oferta SET estado_localidad_ofertada=nuevoEstado WHERE nombre_grada_oferta=grada AND localizacion_localidad_oferta=localizacion AND nombre_recinto_oferta=recinto;
+    END IF;
 END // /*no usar el mismo nombre para los parametros que para las columnas de las tablas -> los confundira*/
 
 

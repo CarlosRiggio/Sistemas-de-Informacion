@@ -105,6 +105,7 @@ CREATE TABLE Compra
     localizacion_localidad_compra VARCHAR(50),
     nombre_grada_compra VARCHAR(50),
     nombre_recinto_compra VARCHAR(50),
+    precioFinal FLOAT,
     FOREIGN KEY(dni_cliente_compra) REFERENCES Cliente(dni_cliente),
     FOREIGN KEY(tipo_usuario_compra) REFERENCES UsLoc(tipo_usuario_usloc),
     FOREIGN KEY(localizacion_localidad_compra) REFERENCES UsLoc(localizacion_localidad_usloc),

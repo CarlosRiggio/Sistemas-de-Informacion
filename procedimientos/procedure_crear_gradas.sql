@@ -2,7 +2,7 @@ USE Taquilla;
 
 DELIMITER //
 
-DROP PROCEDURE IF EXISTS crear_gradas//
+DROP PROCEDURE IF EXISTS crear_gradas;
 
 CREATE PROCEDURE crear_gradas(
     IN nombre_grada_in VARCHAR(50), 

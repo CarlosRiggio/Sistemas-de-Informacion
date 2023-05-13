@@ -253,13 +253,43 @@ DELIMITER ;
 CALL CrearEvento('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'Abierto');
 
 
-INSERT INTO Usuario VALUES ('adulto', 15);
+USE Taquilla;
 
-INSERT INTO UsLoc VALUES ('adulto', 'Asiento 1', 'Grada Norte', 'Camp Nou');
+DELIMITER //
 
+DROP PROCEDURE IF EXISTS crear_usLoc;
+
+CREATE PROCEDURE crear_usLoc(
+    IN localizacion_localidad_in VARCHAR(50),
+    IN nombre_grada_in VARCHAR(50),
+    IN nombre_recinto_in VARCHAR(50),
+    IN tipo_usuario ENUM('jubilado', 'parado', 'adulto', 'infantil')
+)
+BEGIN
+    DECLARE consulta VARCHAR(50);
+
+    SELECT localizacion_localidad INTO consulta
+    FROM Localidad
+    WHERE nombre_recinto_localidad = nombre_recinto_in
+        AND localizacion_localidad = localizacion_localidad_in
+        AND nombre_grada_localidad = nombre_grada_in;
+
+    IF consulta = localizacion_localidad_in THEN
+        INSERT INTO UsLoc VALUES (tipo_usuario, localizacion_localidad_in, nombre_grada_in, nombre_recinto_in);
+    END IF;
+END//
+
+DELIMITER ;
+
+CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'jubilado');
+
+
+INSERT INTO Usuario VALUES ('adulto', 0);
 INSERT INTO Usuario VALUES ('parado', 10);
 INSERT INTO Usuario VALUES ('jubilado', 20);
 INSERT INTO Usuario VALUES ('infantil', 30);
+
+
 
 
 CREATE DATABASE IF NOT EXISTS Taquilla;
@@ -337,7 +367,7 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL crearOferta('El Clasico', 'Camp Nou', 2023-12-12 20:00:00, 'adulto', 'Asiento 1', 'Grada Norte');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
 
 
 

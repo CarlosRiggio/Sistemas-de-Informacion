@@ -3,7 +3,7 @@ USE Taquilla;
 
 DELIMITER //
 
-DROP PROCEDURE IF EXISTS crear_espectaculo//
+DROP PROCEDURE IF EXISTS crear_espectaculo;
 
 CREATE PROCEDURE crear_espectaculo(
     IN nombre_espectaculo_in VARCHAR(50),

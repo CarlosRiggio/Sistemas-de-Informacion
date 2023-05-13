@@ -119,14 +119,6 @@ END //
 
 
 
-
--- ! Suponemos que el procedimiento de Error ya se implemento con CrearEvento()
-
-
-
-DELIMITER //
-
-
 CREATE PROCEDURE ModificarEstadoEvento (
 
     IN nombre_espectaculo_IN VARCHAR(50),

@@ -2,7 +2,7 @@ USE Taquilla;
 
 DELIMITER //
 
-DROP PROCEDURE IF EXISTS crear_usLoc//
+DROP PROCEDURE IF EXISTS crear_usLoc;
 
 CREATE PROCEDURE crear_usLoc(IN localizacion_localidad_in VARCHAR(50), IN nombre_grada_in VARCHAR(50), IN nombre_recinto_in VARCHAR(50), IN tipo_usuario ENUM('jubilado','parado','adulto','infantil'))
 BEGIN

@@ -91,6 +91,13 @@ CREATE PROCEDURE ComprarEntrada (
 )
 BEGIN
     DECLARE precio FLOAT;
+    DECLARE consulta VARCHAR(50);
+    
+    SELECT dni_cliente INTO consulta FROM Cliente WHERE dni_cliente = dni_cliente_IN;
+    
+    IF consulta IS NULL THEN
+    	CALL Error (10,"Cliente inexistente");
+    END IF;
 
     IF (SELECT EXISTS(SELECT * FROM Evento WHERE (
         nombre_espectaculo_evento = nombre_espectaculo_ofertaIN AND
@@ -114,6 +121,7 @@ BEGIN
         nombre_espectaculo_oferta = nombre_espectaculo_ofertaIN AND
         nombre_recinto_oferta = nombre_recinto_ofertaIN AND
         localizacion_localidad_oferta = localizacion_localidad_ofertaIN AND
+      	tipo_usuario_oferta = tipo_usuario_IN AND
         nombre_grada_oferta = nombre_grada_ofertaIN AND
         fecha_evento_oferta = fecha_evento_ofertaIN AND
         estado_localidad_oferta = 'libre'
@@ -127,6 +135,8 @@ BEGIN
     INSERT INTO Compra (
         dni_cliente_compra,
         tipo_usuario_compra,
+        espectaculo_compra,
+        fecha_compra,
         localizacion_localidad_compra,
         nombre_grada_compra,
         nombre_recinto_compra,
@@ -135,9 +145,11 @@ BEGIN
     Values (
         dni_cliente_IN,
         tipo_usuario_IN,
+        nombre_espectaculo_ofertaIN,
+        fecha_evento_ofertaIN,
         localizacion_localidad_ofertaIN,
         nombre_grada_ofertaIN,
-        nombre_recinto_compraIN,
+        nombre_recinto_ofertaIN,
         precio
     );
 
@@ -159,6 +171,3 @@ END //
 
 
 DELIMITER ;
-
-
-

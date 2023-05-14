@@ -1,0 +1,668 @@
+id,lat,lon,name,city,country,team,capacity,year
+s001,34.4333,35.85,11 June Stadium,Tripoli,LBY,Al-Ahly/Al-Ittihad,65000,1967
+s002,28.0782,-80.7534,AAMI Park,Melbourne,AUS,Melbourne Victory FC,30050,2010
+s003,-34.9287,138.5986,AAMI Stadium,Adelaide,AUS,Adelaide Crows FC,51515,1974
+s004,-29.8579,31.0292,ABSA Stadium,Durban,ZAF,The Sharks,55000,1891
+s005,9.0833,7.5333,Abuja Stadium,Abuja,NGA,National Stadium,60000,2003
+s006,17.7,83.3,ACA-VDCA Stadium,Visakhapatnam,IND,Deccan Chargers,46000,2003
+s007,-34.9287,138.5986,Adelaide Oval,Adelaide,AUS,Southern Redbacks,33597,1871
+s008,-8.05,-34.9,Ademar da Costa Carvalho,Recife,BRA,Sport Club do Recife,30520,1937
+s009,32.3047,-106.6417,Aggie Memorial Stadium,Las Cruces,USA,New Mexico State Aggies,30343,1978
+s010,43.1532,-76.2116,Aintree Racecourse,Liverpool,GBR,Grand National Race,75000,1829
+s011,35.685,139.7514,Ajinamoto Stadium,Tokyo,JPN,FC Tokyo,50000,2000
+s012,33.3386,44.3939,Al Shaab Stadium,Baghdad,IRQ,National Stadium,35000,1966
+s013,29.4244,-98.4842,Alamodome,San Antonio,USA,Alamo Bowl,65000,1993
+s014,28.0782,-80.7534,Albert Park F1 Circuit,Melbourne,AUS,Race-use,80000,-
+s015,-34.5875,-58.6725,Alberto J. Armando,Buenos Aires,ARG,CA Boca Juniors,57446,1940
+s016,-5.0833,-42.8167,Alberto Tavares Silva,Teresina,BRA,EC Flamengo,44200,1973
+s017,40.7988,-84.1319,Alejandro Villanueva,Lima,PER,Alianza Lima,35000,1974
+s018,39.7848,-80.4884,Aleppo Int'l Stadium,Aleppo,SYR,Al-Ittihad,75000,2007
+s019,21.3209,-157.8389,Aloha Stadium,Honolulu,USA,Hawai'i Rainbow Warriors,50000,1975
+s020,42.3496,-71.0746,Alumni Stadium,Boston,USA,Boston College Eagles,44500,1957
+s021,-43.5333,172.6333,AMI Stadium,Christchurch,NZL,Canterbury RFU,38628,2002
+s022,32.7257,-97.3214,Amon Carter Stadium,Fort Worth,USA,TCU Horned Frogs,45000,2012
+s023,42.9694,-74.1224,Amsterdam ArenA,Amsterdam,NLD,AFC Ajax,52960,1996
+s024,43.1532,-76.2116,Anfield,Liverpool,GBR,Liverpool FC,45000,1884
+s025,33.8312,-117.8673,Angel Stadium,Anaheim,USA,L.A. Angels of Anaheim,45050,1966
+s026,37.3236,126.8219,Ansan Wa~ Stadium,Ansan,KOR,Hallelujah,35000,2006
+s027,-34.5875,-58.6725,Antonio Vespucio Liberti,Buenos Aires,ARG,CA River Plate,66449,1938
+s028,46.15,-60.1667,ANZ Stadium,Sydney,AUS,National Stadium,83500,1999
+s029,38.8475,-75.7932,Apogee Stadium,Denton,USA,North Texas Mean Green,30850,2011
+s030,-23.5167,-46.8833,Arena Barueri,Barueri,BRA,Football-use,35000,2007
+s031,-30.0333,-51.2,Arena do Grêmio,Porto Alegre,BRA,Grêmio FBPA,60540,2012
+s032,-12.9833,-38.5167,Arena Fonte Nova,Salvador,BRA,EC Bahia,56500,2013
+s033,49.8407,24.0305,Arena Lviv,Lviv,UKR,Football-use,34915,2011
+s034,32.2686,-111.0022,Arizona Stadium,Tucson,USA,Arizona Wildcats,56002,1928
+s035,42.113,-87.9807,Arlington Park,Arlington Heights,USA,Horse-Racing use,34000,1989
+s036,39.1068,-94.566,Arrowhead Stadium,Kansas City,USA,Kansas City Chiefs,79451,1972
+s037,-36.7,144.3333,Ascot Racecourse,Ascot,GBR,Horse Racing-use,80000,2006
+s038,43.85,18.3833,Asim Ferhatovic Hase,Sarajevo,BIH,FK Sarajevo,34630,1983
+s039,37.7312,-122.3826,AT&T Park,San Francisco,USA,San Francisco Giants,41663,2000
+s040,41.0186,28.9647,Atatürk Olimpiyat Stadi,Istanbul,TUR,National Stadium,76092,2001
+s041,42.2823,-73.8294,Athens Olympic Stadium,Athens,GRC,AEK FC,71030,1982
+s042,37.0627,-76.4052,Atlanta Motor Speedway,Hampton,USA,Race-use,124000,1997
+s043,34.039,-117.7548,Auto Club Raceway,Pomona,USA,Race-use,40000,1961
+s044,34.0881,-117.4648,Auto Club Speedway,Fontana,USA,Race-use,92109,1997
+s045,45.5833,9.2667,Autodromo di Monza,Monza,ITA,Race-use,137000,1922
+s046,-22.9,-43.2333,Autódromo Nelson Piquet,Rio De Janeiro,BRA,Race-use,60000,1977
+s047,44.069,-123.0825,Autzen Stadium,Eugene,USA,Oregon Ducks,53800,1967
+s048,40.1176,-83.1265,Aviva Stadium,Dublin,IRL,National Stadium,50000,2010
+s049,35.7261,51.3304,Azadi Stadium,Tehran,IRN,Perspolis Tehran,84412,1971
+s050,39.2483,-96.6849,B. Snyder Family Stadium,Manhattan,USA,Kansas State Wildcats,50300,1968
+s051,6.6833,-1.6167,Baba Yara Stadium,Kumasi,GHA,Asante Kotoko,40528,2007
+s052,23.7231,90.4086,Bangabandhu Stadium,Dhaka,BGD,Brothers Union,36000,1955
+s053,35.1232,-80.9343,Bank of America Stadium,Charlotte,USA,Carolina Panthers,73248,1996
+s054,22.5333,114.1333,Bao'an Stadium,Shenzhen,CHN,Shenzhen Moutai Ruby,40000,2011
+s055,51.0167,6.9833,BayArena,Leverkusen,DEU,Bayer Leverkusen,30210,1999
+s056,45.6023,-122.5167,BC Place Stadium,Vancouver,CAN,BC Lions,52000,1983
+s057,40.8077,-77.8614,Beaver Stadium,University Park,USA,Penn State Nittany Lions,107282,1960
+s058,39.9289,116.3883,Beijing National Stadium,Beijing,CHN,National Stadium,80000,2008
+s059,40.7021,-73.7062,Belmont Park,Elmont,USA,Horse-Racing use,90000,1905
+s060,34.3138,-83.8095,Ben Hill Griffin Stadium,Gainesville,USA,Florida Gators,88548,1929
+s061,41.0186,28.9647,Besiktas Inönü Stadi,Istanbul,TUR,Besiktas JK,32086,1947
+s062,28.5883,-81.2439,BH Networks Stadium,Orlando,USA,UCF Knights,45301,2007
+s063,34.3963,132.4594,Big Arch Stadium,Hiroshima,JPN,Sanfrecce Hiroshima,45000,1993
+s064,35.5372,129.3167,Big Crown Stadium,Ulsan,KOR,Ulsan Hyundai Tigers,43550,2001
+s065,-25.207,27.5655,Bobby Dodd at Grant Field,Atlanta,USA,GT Yellow Jackets,55000,1913
+s066,-24.7667,30.8667,Boleyn Ground,London,GBR,West Ham United,35056,1994
+s067,36.1885,-97.0574,Boone Pickens Stadium,Stillwater,USA,Oklahoma State Cowboys,60000,1920
+s068,31.1981,29.9192,Borg el Arab Stadium,Alexandria,EGY,Football-use,86000,2006
+s069,41.725,44.7908,Boris Paichadze Stadium,Tbilisi,GEO,National Stadium,55000,1976
+s070,33.8417,132.7661,Botchan Stadium,Matsuyama,JPN,Ehime Mandarin Pirates,30136,-
+s071,42.8772,-93.2128,Bramall Lane,Sheffield,GBR,Sheffield United FC,33500,1966
+s072,53.9908,-7.3606,Breffni Park,Cavan,IRL,Cavan County,32000,1923
+s073,41.6816,-72.9405,Bristol Motor Speedway,Bristol,USA,Race-use,160000,1961
+s074,43.561,-116.2135,Bronco Stadium,Boise,USA,Boise State Broncos,37000,1970
+s075,41.4379,-81.5366,Browns Stadium,Cleveland,USA,Cleveland Browns,73200,1999
+s076,33.3323,-87.4741,Bryant Denny Stadium,Tuscaloosa,USA,Alabama Crimson Tide,101821,1929
+s077,3.1667,101.7,Bukit Jalil Stadium,Kuala Lumpur,MYS,National Stadium,100200,1998
+s078,36.84,-119.8285,Bulldog Stadium,Fresno,USA,Fresno State Bulldogs,41031,1980
+s079,-6.1744,106.8294,Bung Karno Stadium,Jakarta,IDN,National Stadium,88083,1962
+s080,-7.2492,112.7508,Bung Tomo Stadium,Surabaya,IDN,Persebaya Surabaya,50000,2010
+s081,39.0012,-76.9317,Byrd Stadium,College Park,USA,Maryland Terrapins,48055,1950
+s082,30.05,31.25,Cairo Int'l Stadium,Cairo,EGY,El-Ahly,74100,1960
+s083,36.5278,-86.0058,Cajun Field,Lafayette,USA,ULL Ragin' Cajuns,31000,1971
+s084,28.0782,-80.7534,Calder Park Raceway,Melbourne,AUS,Race-use,44000,1987
+s085,33.8719,35.5097,Camille Chamoun Stadium,Beirut,LBN,Al-Nejmeh SC,57600,1998
+s086,36.2558,-86.6991,Camp Randall Stadium,Madison,USA,Wisconsin Badgers,81321,1917
+s087,37.7312,-122.3826,Candlestick Park,San Francisco,USA,San Francisco 49ers,69734,1960
+s088,-33.9258,18.4232,Cape Town Stadium,Cape Town,ZAF,Ajax Cape Town,55000,2009
+s089,43.0347,-76.0729,Carrier Dome,Syracuse,USA,Syracuse Orangemen,32000,1980
+s090,35.8181,-78.5636,Carter Finley Stadium,Raleigh,USA,N.C. State Wolfpack,57082,1966
+s091,44.4735,-69.0551,Casement Park,Belfast,GBR,Antrim County,32500,1953
+s092,28.0782,-80.7534,Caulfield Racecourse,Melbourne,AUS,Horse Racing-use,46800,1992
+s093,-2.5167,32.9,CCM Kirumba Stadium,Mwanza,TZA,Pamba,35000,-
+s094,36.9376,-85.9463,Celtic Park,Glasgow,GBR,Celtic FC,60506,1999
+s095,23.0268,113.1315,Century Lotus Stadium,Foshan,CHN,Guangdong Sports Lottery,36686,2005
+s096,47.6026,-122.3284,CenturyLink Field,Seattle,USA,Seattle Seahawks,67000,2002
+s097,43.88,125.3228,Changchun City Stadium,Changchun,CHN,Changchun Yatai,38000,-
+s098,35.4198,-80.6748,Charlotte Motor Speedway,Concord,USA,Race-use,167000,1959
+s099,33.5586,-112.0955,Chase Field,Phoenix,USA,Arizona Diamondbacks,49033,1998
+s100,38.7417,-76.8378,Cheltenham Racecourse,Cheltenham,GBR,Horse Racing use,67500,1979
+s101,30.6667,104.0667,Chengdu Sports Center,Chengdu,CHN,Chengdu Blades,42000,-
+s102,41.8406,-87.7588,Chicago Motor Speedway,Cicero,USA,Race-use,67000,1999
+s103,41.5085,-88.2278,Chicagoland Speedway,Joliet,USA,Race-use,75000,2001
+s104,12.9833,77.5833,Chinnaswamy Stadium,Bangalore,IND,Royal Challengers,40000,1969
+s105,50.7708,6.1053,CHIO Hauptstadion,Aachen,DEU,Equestrian-use,40000,2006
+s106,38.0858,-85.8495,Churchill Downs,Louisville,USA,Horse Racing-use,120000,1895
+s107,40.2056,-8.4196,Cidade de Coimbra,Coimbra,PRT,Académica de Coimbra,30154,2003
+s108,48.0004,0.2047,Circuit Bugatti,Le Mans,FRA,Race-use,100000,1965
+s109,30.2058,-97.8002,Circuit of the Americas,Austin,USA,Race-use,120000,2012
+s110,52.3714,4.527,Circuit Zandvoort,Zandvoort,NLD,Race-use,62000,1948
+s111,40.7528,-73.9725,Citi Field,New York,USA,New York Mets,41922,2009
+s112,39.9524,-75.1653,Citizens Bank Park,Philadelphia,USA,Philadelphia Phillies,43500,2004
+s113,42.9403,-71.4435,City of M'ster Stadium,Manchester,GBR,Manchester City,48000,2002
+s114,-34.5875,-58.6725,Ciudad de Vicente López,Buenos Aires,ARG,Platense,31000,1979
+s115,-33.45,-70.6667,Club Hípico de Santiago,Santiago,CHL,Horse Racing-use,50000,1870
+s116,46.7667,23.6,Cluj Arena,Cluj-napoca,ROM,FC Universitatea Cluj,30335,2011
+s117,-26.2052,28.0498,Coca-Cola Park,Johannesburg,ZAF,Golden Lions RU,62567,1928
+s118,50,8.2711,Coface Arena,Mainz,DEU,FSV Mainz 05,34034,2011
+s119,42.3679,-83.1386,Comerica Park,Detroit,USA,Detroit Tigers,41070,2000
+s120,53.55,-113.5,Commonwealth Stadium,Edmonton,CAN,Edmonton Eskimos,60217,1978
+s121,39.7525,-104.9995,Coors Field,Denver,USA,Colorado Rockies,50449,1995
+s122,32.7825,-96.8207,Cotton Bowl,Dallas,USA,Texas-Oklahoma Game,92200,1932
+s123,38.86,-77.0987,Cowboys Stadium,Arlington,USA,Dallas Cowboys,80000,2009
+s124,40.1176,-83.1265,Croke Park,Dublin,IRL,National Stadium,82300,2002
+s125,34.2777,-79.8626,Darlington Raceway,Darlington,USA,Race-use,65000,1950
+s126,29.5628,106.5528,Datianwan Stadium,Chongqing,CHN,Multi-use,32000,-
+s127,33.4259,-88.8303,Davis Wade Stadium,Starkville,USA,Mississippi State Bulldogs,55082,1914
+s128,29.1622,-81.0075,Daytona Int'l Speedway,Daytona Beach,USA,Race-use,168000,1959
+s129,46.7172,-116.9179,Dinamo Stadion,Moscow,RUS,Dinamo Moskva/CSKA,36540,1928
+s130,47.4084,-122.1957,Dix Stadium,Kent,USA,Kent State Golden Flashes,30520,1969
+s131,30.2058,-97.8002,DKR-Texas Memorial Stadium,Austin,USA,Texas Longhorns,100119,1924
+s132,30.5802,-84.1266,Doak Campbell Stadium,Tallahassee,USA,Florida State Seminoles,82300,1950
+s133,34.0396,-118.2661,Dodger Stadium,Los Angeles,USA,L.A. Dodgers,56000,1962
+s134,-34.5875,-58.6725,Don León Kolbovski,Buenos Aires,ARG,Atlanta,34000,1960
+s135,47.9917,37.7759,Donbass Arena,Donetsk,UKR,FC Shakhtar Donetsk,52518,2009
+s136,41.3333,-73.1019,Donington Park Circuit,Derby,GBR,Race-use,68000,1977
+s137,39.1817,-75.5971,Dover Int'l Speedway,Dover,USA,Race-use,140000,1969
+s138,35.6876,-77.1661,Dowdy Ficklen Stadium,Greenville,USA,E. Carolina Pirates,50000,1963
+s139,37.0941,-86.4286,Doyt L. Perry Stadium,Bowling Green,USA,Bowling Green Falcons,30599,1966
+s140,-32.9468,-60.6393,Dr. Lisandro de la Torre,Rosario,ARG,Rosario Central,41654,1978
+s141,25.2582,55.3047,Dubai Autodrome,Dubai,ARE,Race-use,55000,2004
+s142,-36.8667,174.7667,Eden Park,Auckland,NZL,Auckland RFU,60000,1900
+s143,33.5147,-86.5532,Elland Road,Leeds,GBR,Leeds United,40204,1996
+s144,-12.4656,-46.3669,Elmo Serejo Farias,Taguatinga,BRA,Brasiliense FC,32000,1978
+s145,-24.7667,30.8667,Emirates Stadium,London,GBR,Arsenal FC,60000,2006
+s146,-8.8383,13.2344,Estádio 11 de Novembro,Luanda,AGO,National Stadium,50000,2009
+s147,37.0194,-7.9322,Estádio Algarve,Faro,PRT,SC Farense,30305,2003
+s148,44.2079,-71.8839,Estádio Alvalade XXI,Lisbon,PRT,Sporting Portugal,50300,2003
+s149,42.2328,-8.7226,Estadio Balaidos,Vigo,ESP,Celta de Vigo,31800,1928
+s150,-2.1667,-79.9,Estadio Banco Pichincha,Guayaquil,ECU,Barcelona SC,75000,1987
+s151,37.3824,-5.9761,Estadio Benito Villamarín,Sevilla,ESP,Real Betis Balompié,56432,2001
+s152,-22.9,-47.0833,Estádio Brinco de Ouro,Campinas,BRA,Guaraní FC,32453,1953
+s153,32.5333,-117.0167,Estadio Caliente,Tijuana,MEX,Club Tijuana,33333,2007
+s154,-0.2167,-78.5,Estadio Casa Blanca,Quito,ECU,LDU Quito,42000,1997
+s155,-34.8581,-56.1708,Estadio Centenario,Montevideo,URY,National Stadium,73609,1930
+s156,-34.5875,-58.6725,Estadio Chacarita Juniors,Buenos Aires,ARG,CA Chacarita Juniors,35000,1945
+s157,38.5163,-77.0154,Estadio Ciudad de La Plata,La Plata,ARG,Estudiantes de La Plata,53000,2003
+s158,-25.4167,-49.25,Estádio Couto Pereira,Curitiba,BRA,Coritiba FC,37182,1932
+s159,19.05,-98.2,Estadio Cuauhtémoc,Puebla,MEX,Puebla,42649,1968
+s160,43.3926,-3.806,Estadio Cuscatlán,San Salvador,SLV,National Stadium,45925,1976
+s161,-8.8383,13.2344,Estadio da Cidadela,Luanda,AGO,Atlético Sport Aviação,40000,-
+s162,44.2079,-71.8839,Estádio da Luz,Lisbon,PRT,SL Benfica,65647,2003
+s163,-25.9653,32.5892,Estádio da Machava,Maputo,MOZ,Ferroviário Maputo,60000,1968
+s164,28.0997,-15.4134,Estadio de Gran Canaria,Las Palmas,ESP,UD Las Palmas,31250,2003
+s165,-27.4606,-58.9839,Estadio del Centenario,Resistencia,ARG,CA Sarmiento,35000,2011
+s166,12.1508,-86.2683,Estadio Dennis Martinez,Managua,NIC,National Stadium,30100,-
+s167,40.7833,16,Estadio Deportivo Calí,Palmira,COL,Deportivo Calì,54203,2008
+s168,41.1496,-8.611,Estádio do Dragão,Porto,PRT,FC Porto,50399,2003
+s169,-22.9,-43.2333,Estádio do Maracanã,Rio De Janeiro,BRA,CR Flamengo,78838,1950
+s170,44.2079,-71.8839,Estádio do Restelo,Lisbon,PRT,CF Os Belenenses,32500,1956
+s171,-25.9653,32.5892,Estádio do Zimpeto,Maputo,MOZ,National Stadium,42000,2011
+s172,-17.3833,-66.15,Estadio Felix Capriles,Cochabamba,BOL,Jorge Wilstermann,32000,-
+s173,-34.5875,-58.6725,Estadio Florencio Solá,Buenos Aires,ARG,CA Banfield,33351,1910
+s174,-29.1689,-51.1785,Estádio Francisco Stédile,Caxias Do Sul,BRA,SER Caxias do Sul,30822,1976
+s175,-16.5,-68.15,Estadio Hernando Siles,La Paz,BOL,Club Bolívar,42000,1997
+s176,5.1667,-66.5333,Estadio J.A. Anzoátegui,Puerto La Cruz,VEN,Deportivo Anzoátegui,41000,2007
+s177,38.5163,-77.0154,Estadio J.C. Zerillo,La Plata,ARG,Gimnasia y Esgrima,33500,1924
+s178,10.6317,-71.6406,Estadio J.E. Romero,Maracaibo,VEN,UA Maracaibo,40800,1971
+s179,-23.3,-51.15,Estádio Jacy Scaff,Londrina,BRA,Londrina EC,36000,1976
+s180,20.6667,-103.3333,Estadio Jalisco,Guadalajara,MEX,Club Atlas,63163,1958
+s181,-34.5875,-58.6725,Estadio José Amalfitani,Buenos Aires,ARG,CA Vélez Sársfield,49747,1940
+s182,37.3824,-5.9761,Estadio La Cartuja,Sevilla,ESP,Multi-use,72000,1999
+s183,41.6453,-0.8849,Estadio La Romareda,Zaragoza,ESP,Real Zaragoza,34700,1957
+s184,21.3614,-78.3361,Estadio Latinoamericano,La Habana,CUB,Industriales,55000,1946
+s185,20.5167,-100.8167,Estadio M. Alemán Valdés,Celaya,MEX,Club Celaya,32300,1954
+s186,-5.7833,-35.2167,Estádio Machado,Natal,BRA,América FC,42000,1972
+s187,-19.9167,-43.9333,Estádio Magalhães Pinto,Belo Horizonte,BRA,Cruzeiro EC,62170,1965
+s188,-12.9833,-38.5167,Estádio Manoel Barradas,Salvador,BRA,EC Vitória,35632,1986
+s189,-21.7517,-43.3528,Estádio Mario Helênio,Juiz De Fora,BRA,SC Juiz de Fora,40000,1988
+s190,34.418,-118.5662,Estadio Mestalla,Valencia,ESP,Valencia CF,53000,1923
+s191,10.9639,-74.7964,Estadio Metropolitano,Barranquilla,COL,Junior CPD,46788,1986
+s192,-2.1667,-79.9,Estadio Modelo A. Spencer,Guayaquil,ECU,Multi-use,45000,1959
+s193,40.7988,-84.1319,Estadio Monumental U,Lima,PER,Universitario,80093,2000
+s194,19.7,-101.1167,Estadio Morelos,Morelia,MEX,Morelia,38384,1989
+s195,40.7988,-84.1319,Estadio Nacional,Lima,PER,National Stadium,60000,1952
+s196,44.2079,-71.8839,Estádio Nacional,Lisbon,PRT,National Stadium,39000,1944
+s197,37.987,-1.13,Estadio Nueva Condomina,Murcia,ESP,Real Murcia CF,33045,2006
+s198,-34.5875,-58.6725,Estadio Nueva España,Buenos Aires,ARG,Deportivo Español,32500,1981
+s199,-7.2167,-35.8833,Estádio O Amigão,Campina Grande,BRA,Campinense Clube,38000,1975
+s200,20.7167,-103.4,Estadio Omnilife,Zapopan,MEX,CD Guadalajara,45500,2010
+s201,21.3614,-78.3361,Estadio Panamericano,La Habana,CUB,National Team,34000,-
+s202,-34.5875,-58.6725,Estadio Pedro Bidegaín,Buenos Aires,ARG,CA San Lorenzo,42000,1994
+s203,-18.55,-54.7667,Estádio Plácido Castelo,Fortaleza,BRA,Ceará SC,67037,1973
+s204,-12.9833,-38.5167,Estádio Roberto Santos,Salvador,BRA,EC Bahia,32157,2009
+s205,43.2609,-2.9388,Estadio San Mamés,Bilbao,ESP,Athletic de Bilbao,39750,1913
+s206,25.6667,-100.3167,Estadio Tecnologico,Monterrey,MEX,Rayados del Monterrey,38622,1950
+s207,40.985,-89.1521,Estadio Universitario,Toluca,MEX,Potros UAEM,32000,1964
+s208,-3.1133,-60.0253,Estádio Vivaldo Lima,Manaus,BRA,Nacional FC,43000,1970
+s209,28.0782,-80.7534,Etihad Stadium,Melbourne,AUS,Multi-use,56347,2000
+s210,30.3533,-81.499,EverBank Field,Jacksonville,USA,Jacksonville Jaguars,76877,1995
+s211,53.75,-2.4833,Ewood Park,Blackburn,GBR,Blackburn Rovers,31367,1994
+s212,39.0437,-92.2714,Faurot Field,Columbia,USA,Missouri Tigers,62000,1926
+s213,5.3097,-4.0127,Félix Houphouet-Boigny,Abidjan,CIV,National Stadium,45000,-
+s214,39.9289,116.3883,Fengtai Stadium,Beijing,CHN,Beijing Yitong Kuche,31043,-
+s215,42.3496,-71.0746,Fenway Park,Boston,USA,Boston Red Sox,36108,1912
+s216,38.7161,-9.3923,Fernanda Pires da Silva,Estoril,PRT,Race-use,45000,1972
+s217,28.6,77.2,Feroz Shah Kotla,New Delhi,IND,Delhi Daredevils,48000,1883
+s218,52.05,-9.5167,Fitzgerald Stadium,Killarney,IRL,Kerry County,43000,1936
+s219,28.0782,-80.7534,Flemington Racecourse,Melbourne,AUS,Horse Racing-use,130000,1927
+s220,28.5883,-81.2439,Florida Citrus Bowl,Orlando,USA,Orlando City SC,70188,1936
+s221,31.4789,-97.0926,Floyd Casey Stadium,Waco,USA,Baylor Bears,50000,1950
+s222,34.1139,-93.7089,Floyd Stadium,Murfreesboro,USA,MTSU Blue Raiders,31788,1933
+s223,40.0878,-105.3735,Folsom Field Stadium,Boulder,USA,Colorado Buffaloes,53750,1924
+s224,42.3679,-83.1386,Ford Field,Detroit,USA,Detroit Lions,64500,2002
+s225,28.0288,-82.7689,Forsyth Barr Stadium,Dunedin,NZL,Otago RFU,30500,2011
+s226,39.9524,-75.1653,Franklin Field,Philadelphia,USA,Pennsylvania Quakers,52593,1923
+s227,34.3402,-89.4833,Fred Yager Stadium,Oxford,USA,Miami-Ohio RedHawks,30012,1983
+s228,59.3667,18.0167,Friends Arena,Solna,SWE,AIK Fotboll,54329,2012
+s229,49.45,7.75,Fritz Walter Stadion,Kaiserslautern,DEU,1.FC Kaiserslautern,48500,1920
+s230,33.6064,130.4181,Fukuoka Dome,Fukuoka,JPN,Fukuoka SoftBank Hawks,35695,1993
+s231,37.75,140.4678,Fukushima Racecourse,Fukushima,JPN,Horse-Racing use,50000,1918
+s232,31.5497,74.3436,Gadaffi Hockey Stadium,Lahore,PAK,Hockey-use,45000,-
+s233,31.5497,74.3436,Gaddafi Stadium,Lahore,PAK,Cricket-use,60000,1959
+s234,52.6647,-8.6231,Gaelic Grounds,Limerick,IRL,Limerick County,50000,1926
+s235,36.2558,-86.6991,Gateway Int'l Raceway,Madison,USA,Race-use,55000,1997
+s236,7.15,3.35,Gateway Stadium,Abeokuta,NGA,Football-use,35000,-
+s237,35.233,-97.4122,Gaylord Family Stadium,Norman,USA,Oklahoma Sooners,82112,1923
+s238,-6.9039,107.6186,Gedebage Stadium,Bandung,IDN,Persib Bandung,72000,2013
+s239,-25.207,27.5655,Georgia Dome,Atlanta,USA,Atlanta Falcons,71149,1992
+s240,40.8077,-77.8614,Gerald J. Ford Stadium,University Park,USA,SMU Mustangs,32000,2000
+s241,31.3203,48.6693,Ghadir Stadium,Ahvaz,IRN,Foolad FC,51000,2012
+s242,42.0608,-71.2337,Gillette Stadium,Foxboro,USA,New England Patriots,68756,2002
+s243,36.3365,-88.6714,Glücksgas Stadion,Dresden,DEU,SG Dynamo Dresden,32066,2009
+s244,43.1532,-76.2116,Goodison Park,Liverpool,GBR,Everton FC,40200,1892
+s245,31.6315,-8.0083,Grand Stade de Marrakech,Marrakech,MAR,KAC Marrakech,41356,2010
+s246,35.7806,-5.8136,Grand Stade de Tanger,Tanger,MAR,Ittihad de Tanger,45000,2011
+s247,39.1668,-84.5382,Great American Ball Park,Cincinnati,USA,Cincinnati Reds,42059,2003
+s248,52.2195,6.8912,Grolsch Veste,Enschede,NLD,FC Twente,30205,1998
+s249,23.1167,113.25,Guangdong Stadium,Guangzhou,CHN,Multi-use,80012,2001
+s250,36.9376,-85.9463,Hampden Park,Glasgow,GBR,Queens Park,50670,1999
+s251,43.3667,144.4333,Hanshin Racecourse,Hyogo,JPN,Horse-Racing use,139877,1991
+s252,42.3496,-71.0746,Harvard Stadium,Boston,USA,Harvard Crimson,30898,1903
+s253,40.4495,-79.988,Heinz Field,Pittsburgh,USA,P'burgh Steelers/Panthers,64450,2001
+s254,4.8133,-75.6961,Hernan Ramirez Villegas,Pereira,COL,Deportivo Pereira,30313,1971
+s255,45.0059,-93.4305,HH Humphrey Metrodome,Minneapolis,USA,Minnesota Twins,45423,1982
+s256,42.8772,-93.2128,Hillsborough,Sheffield,GBR,Sheffield Wednesday,39859,1996
+s257,-34.5875,-58.6725,Hipódromo Argentino,Buenos Aires,ARG,Horse-Racing use,50000,1908
+s258,-22.9,-43.2333,Hipódromo da Gávea,Rio De Janeiro,BRA,Horse Racing-use,80000,1875
+s259,-34.4714,-58.5078,Hipódromo de San Isidro,San Isidro,ARG,Horse-Racing use,100000,1935
+s260,38.2133,-84.2256,Hippodrome d'Auteuil,Paris,FRA,Horse Racing-use,40000,1873
+s261,38.2133,-84.2256,Hippodrome de Longchamp,Paris,FRA,Horse Racing-use,50000,1857
+s262,38.2133,-84.2256,Hippodrome de Vincennes,Paris,FRA,Horse Racing-use,60000,1879
+s263,49.3228,8.5458,Hockenheimring,Hockenheim,DEU,Race-use,120000,1932
+s264,59.9167,10.75,Holmenkollen Stadion,Oslo,NOR,Ski-jumping use,55000,1892
+s265,31.0456,121.3997,Hongkou Stadium,Shanghai,CHN,Shenhua FC,33060,1999
+s266,33.2265,-91.7912,Horner Rennbahn,Hamburg,DEU,Horse Racing-use,50000,1869
+s267,40.1811,44.5136,Hrazdan Stadium,Yerevan,ARM,National Stadium,58000,1972
+s268,-27.758,29.9318,Hunter Stadium,Newcastle,AUS,Newcastle Knights RLC,33000,1970
+s269,32.7539,-88.7219,Huskie Stadium,De Kalb,USA,Northern Illinois Huskies,31000,1965
+s270,47.6026,-122.3284,Husky Stadium,Seattle,USA,Washington Huskies,72500,1920
+s271,46.6247,14.3053,Hypo-Arena,Klagenfurt,AUT,SK Austria Kärnten,32000,2007
+s272,36.9376,-85.9463,Ibrox Stadium,Glasgow,GBR,Rangers FC,51082,1997
+s273,33.2265,-91.7912,Imtech Arena,Hamburg,DEU,Hamburger SV,57000,2000
+s274,-13.5183,-71.9781,Inca Garcilaso de la Vega,Cusco,PER,ADFP Cienciano,42056,1957
+s275,41.9389,-73.9901,Independence Park,Kingston,JAM,National Stadium,35000,1962
+s276,32.6188,-93.8852,Independence Stadium,Shreveport,USA,MainStay Indep. Bowl,50832,-
+s277,35.8864,-90.6425,Indian Stadium,Jonesboro,USA,Arkansas State Indians,33410,1974
+s278,38.2433,-122.4602,Infineon Raceway,Sonoma,USA,Race-use,64000,1968
+s279,35.7102,-84.3743,International Speedway,Loudon,USA,Race-use,91000,1990
+s280,41.0186,28.9647,Istanbul Park,Istanbul,TUR,Race-use,155000,2005
+s281,38.4127,27.1384,Izmir Atatürk Stadi,Izmir,TUR,Göztepe SK,51295,1964
+s282,42.03,-93.5905,Jack Trice Stadium,Ames,USA,Iowa State Cyclones,45814,1975
+s283,-6.9039,107.6186,Jalak Harupat Soreang,Bandung,IDN,Persikab Bandung,40000,-
+s284,37.5985,126.9783,Jamsil Stadium,Seoul,KOR,LG Twins,30265,1982
+s285,13.0833,80.2833,Jawaharlal Nehru Stadium,Chennai,IND,Football-use,40000,-
+s286,24.4667,54.3667,Jeque Zayed Stadium,Abu Dhabi,ARE,National Stadium,49500,-
+s287,31.0456,121.3997,Jiangwan Sports Centre,Shanghai,CHN,Multi-use,40000,1935
+s288,35.685,139.7514,Jingu Stadium,Tokyo,JPN,Yakult Swallows,37975,1925
+s289,33.69,73.0551,Jinnah Sport Stadium,Islamabad,PAK,ZTBL FC,48200,-
+s290,38.3685,-82.4245,Joan C. Edwards Stadium,Huntington,USA,Marshall Thundering Herd,38019,1991
+s291,40.7988,-84.1319,Jockey Club Monterrico,Lima,PER,Horse Racing-use,40000,-
+s292,32.5151,-92.6262,Joe Aillet Stadium,Ruston,USA,Louisiana Tech Bulldogs,30200,1968
+s293,-26.2052,28.0498,Johannesburg Stadium,Johannesburg,ZAF,Jomo Cosmos FC,37500,1995
+s294,33.5903,-101.8519,Jones AT&T Stadium,Lubbock,USA,Texas Tech Red Raiders,62500,1947
+s295,47.3101,-122.2042,Jordan Hare Stadium,Auburn,USA,Auburn Tigers,87451,1939
+s296,-8.05,-34.9,José do Rego Maciel,Recife,BRA,Santa Cruz FC,66044,1972
+s297,-34.7242,-58.2526,José Luis Meiszner,Quilmes,ARG,Quilmes AC,33000,1993
+s298,-38.0023,-57.5575,José Maria Minella,Mar Del Plata,ARG,CA Aldosivi,43542,1978
+s299,-30.0333,-51.2,José Pinheiro Borda,Porto Alegre,BRA,SC Internacional,58306,1969
+s300,45.05,7.6667,Juventus Arena,Torino,ITA,Juventus FC,41254,2011
+s301,38.7322,35.4853,Kadir Has Stadi,Kayseri,TUR,Kayserispor,32864,2009
+s302,-15.7833,35,Kamuzu Stadium,Blantyre,MWI,Big Bullets,50000,-
+s303,39.1068,-94.566,Kansas Speedway,Kansas City,USA,Race-use,80187,2001
+s304,22.6333,120.35,Kaohsiung Stadium,Kaohsiung,TWN,Taipower FC,40000,2009
+s305,24.9056,67.0822,Karachi National Stadium,Karachi,PAK,Karachi CA,34228,1955
+s306,39.1068,-94.566,Kauffman Stadium,Kansas City,USA,Kansas City Royals,38177,1973
+s307,35.9666,-79.041,Kenan Stadium,Chapel Hill,USA,N. Carolina Tar Heels,60000,1927
+s308,13.1,-59.6167,Kensington Oval,Bridgetown,BRB,Barbados Cricket,32000,1882
+s309,41.0544,-74.6171,Kentucky Speedway,Sparta,USA,Race-use,66089,2000
+s310,25.2867,51.5333,Khalifa Int'l Stadium,Doha,QAT,National Stadium,50000,2005
+s311,55.3333,86.0833,Khimik Stadion,Kemerovo,RUS,Kuzbass Kemerovo,33000,-
+s312,21.4267,39.8261,King Abdul Aziz,Makkah,SAU,Al Wahda,33500,1984
+s313,24.6537,46.7152,King Fahd Int'l Stadium,Riyadh,SAU,Al Hilal/Shabab,67000,1987
+s314,41.6695,-91.5133,Kinnick Stadium,Iowa City,USA,Iowa Hawkeyes,70397,1929
+s315,50.8333,4.3333,Koning Boudewijn Stadion,Brussels,BEL,National Stadium,50024,1999
+s316,34.7167,135.3333,Koshien Stadium,Nishinomiya,JPN,Hanshin Tigers,50454,1921
+s317,45.0488,38.9725,Kuban Stadion,Krasnodar,RUS,FK Kuban Krasnodar,31654,1961
+s318,30.6131,-96.3217,Kyle Field,College Station,USA,Texas A&M Aggies,82600,1927
+s319,35.0214,135.7556,Kyoto Racecourse,Kyoto,JPN,Horse-Racing use,120000,1999
+s320,34.0396,-118.2661,L.A. Memorial Coliseum,Los Angeles,USA,USC Trojans,93607,1923
+s321,41.3984,2.1741,L'Estadi (Camp Nou),Barcelona,ESP,FC Barcelona,99354,1957
+s322,30.6586,-88.3535,Ladd Peebles Stadium,Mobile,USA,South Alabama Jaguars,40646,1948
+s323,44.4889,-88.0704,Lambeau Field,Green Bay,USA,Green Bay Packers,72601,1957
+s324,37.2669,-80.4325,Lane Stadium,Blacksburg,USA,Virginia Tech Hokies,65632,1965
+s325,36.11,-115.2118,Las Vegas Motor Speedway,Las Vegas,USA,Race-use,140000,1996
+s326,40.3393,-111.5709,LaVell Edwards Stadium,Provo,USA,BYU Cougars,64045,1964
+s327,33.4468,-86.7404,Legion Field Stadium,Birmingham,USA,UAB Blazers,71594,1926
+s328,14.6708,-17.4381,Léopold Sédar Senghor,Dakar,SEN,National Stadium,60000,1985
+s329,-12.9667,28.6333,Levy Mwanawasa Stadium,Ndola,ZMB,National Stadium,40100,2011
+s330,-29.1176,-59.6583,Libertadores de América,Avellaneda,ARG,CA Independiente,44000,2009
+s331,35.185,-90.0936,Liberty Bowl,Memphis,USA,Memphis Tigers,62380,1965
+s332,7.3878,3.8964,Liberty Stadium,Ibadan,NGA,Football-use,35000,-
+s333,39.9524,-75.1653,Lincoln Financial Field,Philadelphia,USA,Philadelphia Eagles,68532,2003
+s334,46.7172,-116.9179,Lokomotiv Stadion,Moscow,RUS,FK Lokomotiv Moskva,30979,2002
+s335,36.1473,-86.777,LP Field,Nashville,USA,Titans/State Tigers,68932,1999
+s336,39.793,-86.2853,Lucas Oil Stadium,Indianapolis,USA,Indianapolis Colts,70000,2008
+s337,19.2,-96.1333,Luis Pirata Fuente,Veracruz,MEX,Tiburones Rojos Veracruz,43154,1967
+s338,46.7172,-116.9179,Luzhniki Stadion,Moscow,RUS,Spartak/CSKA Moskva,78360,1956
+s339,61.1333,10.5,Lysgårdsbakkene,Lillehammer,NOR,Ski-jumping use,40000,1994
+s340,39.2904,-76.6122,M&T Bank Stadium,Baltimore,USA,Baltimore Ravens,69084,1998
+s341,13.0833,80.2833,MA Chidambaram Stadium,Chennai,IND,Chennai Super Kings,50000,1916
+s342,39.4896,-119.7492,Mackay Stadium,Reno,USA,Nevada Wolf Pack,31545,1967
+s343,-6.1744,106.8294,Madya Stadium,Jakarta,IDN,Multi-use,40000,2004
+s344,41.9505,-83.4457,Malone Stadium,Monroe,USA,Louisiana-Monroe Indians,30427,1978
+s345,-32.8908,-68.8272,Malvinas Argentinas,Mendoza,ARG,Godoy Cruz,34875,1978
+s346,25.9388,-80.2144,Marlins Park,Miami,USA,Florida Marlins,37000,2012
+s347,46.7322,-117.2455,Martin Stadium,Pullman,USA,WSU Cougars,33522,1972
+s348,36.7266,-79.8667,Martinsville Speedway,Martinsville,USA,Race-use,86000,1947
+s349,34.3963,132.4594,Mazda Stadium,Hiroshima,JPN,Hiroshima Toyo Carp,32000,2009
+s350,-25.4745,30.9703,Mbombela Stadium,Nelspruit,ZAF,Mpumalanga Black Aces,43500,2009
+s351,53.85,-9.3,McHale Park,Castlebar,IRL,Mayo County,36000,1931
+s352,51.0833,-114.0833,McMahon Stadium,Calgary,CAN,Calgary Stampeders,37317,1960
+s353,28.0782,-80.7534,Melbourne Cricket Ground,Melbourne,AUS,Multi-use,100000,1853
+s354,37.8646,-122.2877,Memorial Stadium,Berkeley,USA,California Golden Bears,63186,1923
+s355,34.4396,-91.5298,Mercedes-Benz Arena,Stuttgart,DEU,VfB Stuttgart,60441,1933
+s356,29.9589,-90.1568,Mercedes-Benz Superdome,New Orleans,USA,New Orleans Saints,72003,1975
+s357,40.8132,-74.0738,MetLife Stadium,East Rutherford,USA,New York Giants/Jets,82500,2010
+s358,10.0739,-69.3228,Metropolitano de Lara,Barquisimeto,VEN,CD Lara,40312,2007
+s359,25.4903,-80.4187,Miami Speedway,Homestead,USA,Race-use,72000,1995
+s360,33.6521,-88.6953,Michie Stadium,West Point,USA,Army Black Knights,39929,1924
+s361,40.6981,-73.9571,Michigan Int'l Speedway,Brooklyn,USA,Race-use,136373,1968
+s362,42.2734,-83.7133,Michigan Stadium,Ann Arbor,USA,Michigan Wolverines,109901,1927
+s363,33.6457,-86.9336,Millennium Stadium,Cardiff,GBR,National Stadium,74500,1999
+s364,43.0434,-87.8945,Miller Park,Milwaukee,USA,Milwaukee Brewers,42400,2001
+s365,29.8688,-95.538,Minute Maid Park,Houston,USA,Houston Astros,40950,2000
+s366,34.6913,135.183,Misaki Park Stadium,Kobe,JPN,Vissel Kobe,30132,2001
+s367,24.4667,54.3667,Mohamed Bin Zayed Stadium,Abu Dhabi,ARE,Al Jazira,42056,2009
+s368,52.5833,-2.1333,Molineux Stadium,Wolverhampton,GBR,Wolverhampton Wanderers,31700,1889
+s369,-33.45,-70.6667,Monumental David Arellano,Santiago,CHL,CSD Colo Colo,47017,1989
+s370,-16.3989,-71.535,Monumental UNSA,Arequipa,PER,IDUNSA,42500,1990
+s371,50.45,-104.6167,Mosaic Stadium,Regina,CAN,Saskatchewan Roughriders,30945,1946
+s372,-29.8579,31.0292,Moses Mabhida Stadium,Durban,ZAF,AmaZulu FC,70000,2009
+s373,37.167,-86.7497,Mountaineer Field,Morgantown,USA,West Virginia Mountaineers,63500,1980
+s374,-36.8667,174.7667,Mt Smart Stadium,Auckland,NZL,N.Z. Warriors RLC,35000,1989
+s375,29.9667,32.55,Mubarak Stadium,Suez,EGY,El Qanah,45000,2008
+s376,51.3,8.6167,Mühlenkopfschanze,Willingen,DEU,Ski-jumping-use,35000,1951
+s377,40.6443,-8.6455,Municipal de Aveiro,Aveiro,PRT,Beira-Mar,30678,2003
+s378,41.5503,-8.4201,Municipal de Braga,Braga,PRT,Sporting de Braga,30154,2003
+s379,39.3847,-85.9023,Murrayfield,Edinburgh,GBR,Edinburgh Rugby,67500,1994
+s380,21.0333,105.85,My Dinh Stadium,Hanoi,VNM,National Stadium,40000,2003
+s381,34.6864,135.52,Nagai Stadium,Osaka,JPN,Cerezo Osaka,50000,1996
+s382,35.1802,136.9067,Nagoya Dome,Nagoya,JPN,Chunichi Dragons,40500,1997
+s383,35.6047,140.1233,Nakayama Racecourse,Chiba,JPN,Horse-Racing use,165676,1990
+s384,0.3156,32.5656,Namboole Stadium,Kampala,UGA,National Stadium,40000,-
+s385,40.6421,-74.82,Nashville Superspeedway,Lebanon,USA,Race-use,50000,2001
+s386,44.4333,26.1,National Arena,Bucharest,ROM,National Team,55600,2011
+s387,34.1539,-117.9919,National Complex,Monrovia,LBR,National Stadium,35000,-
+s388,11.55,104.9167,National Olympic,Phnom Penh,KHM,Khemera FC,50000,1964
+s389,-17.8178,31.0447,National Sports Stadium,Harare,ZWE,National Stadium,60000,-
+s390,8.49,-13.2342,National Stadium,Freetown,SLE,National Stadium,36000,-
+s391,38.8749,-77.0325,Nationals Ballpark,Washington,USA,Washington Nationals,41888,2008
+s392,40.753,-75.3062,Nazareth Speedway,Nazareth,USA,Race-use,37424,1966
+s393,5.4112,100.3354,Negeri Pulau Pinang,Penang,MYS,Penang FA,40000,2000
+s394,-33.918,25.5701,Nelson Mandela Stadium,Port Elizabeth,ZAF,Mighty Elephants,48459,2009
+s395,50.7708,6.1053,Neuer Tivoli,Aachen,DEU,Alemannia Aachen,32900,2009
+s396,-33.9258,18.4232,Newlands Stadium,Cape Town,ZAF,Stormers Super 14,50900,1989
+s397,44.058,-79.4526,Newmarket Racecourse,Newmarket,GBR,Horse Racing use,45000,-
+s398,36.0582,-83.9147,Neyland Stadium,Knoxville,USA,Tennessee Volunteers,102037,1921
+s399,37.9022,139.0236,Niigata Racecourse,Niigata,JPN,Horse-Racing use,75000,-
+s400,37.9022,139.0236,Niigata Stadium,Niigata,JPN,Albirex Niigata,42700,2001
+s401,39.1668,-84.5382,Nippert Stadium,Cincinnati,USA,Cincinnati Bearcats,35000,1916
+s402,41.6834,-86.25,Notre Dame Stadium,South Bend,USA,Notre Dame Fighting Irish,80795,1930
+s403,39.3892,-76.492,Nottingham City Ground,Nottingham,GBR,Nottingham Forest,30602,1898
+s404,35.2199,-89.4996,O.co Coliseum,Oakland,USA,Oakland Raiders,63026,1966
+s405,5.55,-0.2167,Ohene Djan Stadium,Accra,GHA,National Stadium,40000,2007
+s406,39.8928,-82.9588,Ohio Stadium,Columbus,USA,Ohio State Buckeyes,102329,1922
+s407,42.9403,-71.4435,Old Trafford,Manchester,GBR,Manchester United,76098,1910
+s408,41.3984,2.1741,Olímpic Lluís Companys,Barcelona,ESP,Multi-use,56000,1927
+s409,-0.2167,-78.5,Olímpico Atahualpa,Quito,ECU,National Stadium,41000,1951
+s410,-22.9,-43.2333,Olímpico João Havelange,Rio De Janeiro,BRA,Botafogo FR,46931,2007
+s411,15.5,-88.0333,Olimpico Metropolitano,San Pedro Sula,HND,CD Marathon,40000,1997
+s412,-30.0333,-51.2,Olímpico Monumental,Porto Alegre,BRA,Football-use,47000,1954
+s413,44.4338,-71.2707,Olympiastadion,Berlin,DEU,Hertha BSC,76065,1936
+s414,39.1422,117.1767,Olympic Center Stadium,Tianjin,CHN,Tianjin Songjiang,60000,2007
+s415,32.0617,118.7778,Olympic Sports Center,Nanjing,CHN,Jiangsu Guoxin Sainty FC,61443,2005
+s416,29.5628,106.5528,Olympic Sports Centre,Chongqing,CHN,Chongqing FC,58680,2004
+s417,-24.7667,30.8667,Olympic Stadium,London,GBR,Multi-use,80000,2011
+s418,39.2904,-76.6122,Oriole Park at Camden Yards,Baltimore,USA,Baltimore Orioles,45971,1992
+s419,28.5883,-81.2439,Orlando Stadium,Orlando,ZAF,Moroka Swallows,40000,2008
+s420,34.6864,135.52,Osaka Dome,Osaka,JPN,Orix Buffaloes,36477,1997
+s421,-34.5875,-58.6725,Oscar Alfredo Galvez,Buenos Aires,ARG,Race-use,45000,1952
+s422,53.15,-2.6667,Oulton Park,Tarporley,GBR,Race-use,45000,1926
+s423,51.8986,-8.4958,Páirc Uí Chaoimh,Cork,IRL,Cork County,43000,1976
+s424,60.7833,22.6833,Paju Public Stadium,Paju,KOR,Multi-use,35000,2001
+s425,42.2823,-73.8294,Panathenaic Stadium,Athens,GRC,Multi-use,45000,BC
+s426,38.2133,-84.2256,Parc des Princes,Paris,FRA,Paris Saint-Germain,48712,1998
+s427,-32.9468,-60.6393,Parque Independencia,Rosario,ARG,Newell's Old Boys,38095,1979
+s428,39.1668,-84.5382,Paul Brown Stadium,Cincinnati,USA,Cincinnati Bengals,65352,2000
+s429,53.2719,-9.0489,Pearse Stadium,Galway,IRL,Galway County,34000,2003
+s430,45.7354,-118.7977,Pendleton Round-Up,Pendleton,USA,Rodeo-use,50000,1910
+s431,24.9056,67.0822,Peoples Football Stadium,Karachi,PAK,HBL FC,40000,1995
+s432,4.5841,101.0829,Perak Stadium,Ipoh,MYS,Perak FA,35000,1997
+s433,32.9014,-117.2079,PETCO Park,San Diego,USA,San Diego Padres,46000,2004
+s434,54.3608,18.6583,PGE Arena Gdansk,Gdansk,POL,Lechia Gdansk,42105,2011
+s435,-27.9864,26.7066,Phakisa Freeway,Welkom,ZAF,Race-use,60000,1998
+s436,42,21.4333,Philip II Arena,Skopje,MKD,National Stadium,36400,1947
+s437,51.45,5.4667,Philips Stadion,Eindhoven,NLD,PSV,36500,1913
+s438,33.5586,-112.0955,Phoenix Int'l Raceway,Phoenix,USA,Race-use,78000,1964
+s439,35.6942,-77.6294,Pikes Peak Int'l Raceway,Fountain,USA,Race-use,42787,1997
+s440,39.2904,-76.6122,Pimlico Race Course,Baltimore,USA,Horse-Racing use,98983,1870
+s441,38.0858,-85.8495,PJ Cardinal Stadium,Louisville,USA,Louisville Cardinals,56000,1998
+s442,42.15,24.75,Plovdiv Stadion,Plovdiv,BGR,Multi-use,48000,1950
+s443,40.4495,-79.988,PNC Park,Pittsburgh,USA,Pittsburgh Pirates,37898,2001
+s444,41.0605,-75.4616,Pocono Raceway,Long Pond,USA,Race-use,65000,1968
+s445,42.644,-83.2796,Pontiac Silverdome,Pontiac,USA,Football-use,80311,1975
+s446,45.4691,-122.5535,Portland Int'l Raceway,Portland,USA,Race-use,66000,1960
+s447,42.6825,-70.847,Portman Road,Ipswich,GBR,Ipswich Town,30300,1884
+s448,6.9319,79.8478,Premadasa Stadium,Colombo,LKA,National Stadium,35000,1986
+s449,-29.1176,-59.6583,Presidente Perón,Avellaneda,ARG,Racing Club,51389,1950
+s450,41.3333,-73.1019,Pride Park,Derby,GBR,Derby County,33597,1997
+s451,26.4344,50.1033,Prince Mohamed bin Fahd,Dammam,SAU,Al Ittifaq,35000,1973
+s452,28.0782,-80.7534,Princes Park,Melbourne,AUS,Multi-use,35000,1987
+s453,41.4379,-81.5366,Progressive Field,Cleveland,USA,Cleveland Indians,43068,1994
+s454,32.9014,-117.2079,Qualcomm Stadium,San Diego,USA,San Diego Chargers,71294,1967
+s455,37.6861,-122.4107,Queensland Centre,Brisbane,AUS,Athletics-use,48400,1982
+s456,13.754,100.5014,Rajamangala Stadium,Bangkok,THA,National Stadium,65000,1998
+s457,17.3753,78.4744,Rajiv Gandhi Stadium,Hyderabad,IND,Deccan Chargers,55000,2004
+s458,42.7442,-78.7442,Ralph Wilson Stadium,Orchard Park,USA,Buffalo Bills,73967,1973
+s459,37.3824,-5.9761,Ramón Sánchez Pizjuán,Sevilla,ESP,Sevilla FC,55000,1958
+s460,37.0448,-122.1021,Ramón Tahuichi Aguilera,Santa Cruz,BOL,Blooming Santa Cruz,38000,1939
+s461,38.86,-77.0987,Rangers Ballpark,Arlington,USA,Texas Rangers,48114,1994
+s462,22.5697,88.3697,Ranji Stadium,Calcutta,IND,Kolkata Knight Riders,90000,1864
+s463,27.943,-82.524,Raymond James Stadium,Tampa,USA,Tampa Bay Buccaneers,65647,1998
+s464,35.0785,-78.9336,Razorback Stadium,Fayetteville,USA,Arkansas Razorbacks,72000,1953
+s465,47.8,13.0333,Red Bull Arena,Salzburg,AUT,Red Bull Salzburg,31835,2007
+s466,29.8688,-95.538,Reliant Stadium,Houston,USA,Houston Texans,71054,2002
+s467,41.7776,-72.6214,Rentschler Field,East Hartford,USA,UConn Huskies,40000,2003
+s468,43.0367,44.6678,Republikan Spartak,Vladikavkaz,RUS,FK Alania Vladikavkaz,32574,-
+s469,44.4698,-123.343,Reser Stadium,Corvallis,USA,Oregon State Beavers,44000,1953
+s470,51.4833,7.2167,rewirpowerSTADION,Bochum,DEU,VfL Bochum,32645,1919
+s471,38.8749,-77.0325,RFK Memorial Stadium,Washington,USA,DC United,56454,1961
+s472,0.5333,101.45,Riau Main Stadium,Pekanbaru,IDN,Football-use,43923,2012
+s473,29.8688,-95.538,Rice Stadium,Houston,USA,Rice Owls,70000,1950
+s474,40.7608,-111.8911,Rice-Eccles Stadium,Salt Lake City,USA,Utah Utes,46500,1982
+s475,37.5858,-77.4888,Richmond Int'l Raceway,Richmond,USA,Race-use,105000,1946
+s476,41.6933,-71.6395,Ricoh Arena,Coventry,GBR,Coventry City FC,32000,2005
+s477,54.5728,-1.1628,Riverside Stadium,Middlesbrough,GBR,Middlesbrough FC,35049,1997
+s478,31.2622,-89.2723,Roberts Stadium,Hattiesburg,USA,S. Miss Golden Eagles,36500,1976
+s479,52.4833,-0.6667,Rockingham Speedway,Corby,GBR,Race-use,52000,2001
+s480,34.9302,-79.767,Rockingham_Speedway,Rockingham,USA,Race-use,34500,1965
+s481,40.4903,-80.6709,Rogers Centre,Toronto,CAN,Toronto Argonauts,53000,1989
+s482,34.1379,-118.1296,Rose Bowl Stadium,Pasadena,USA,UCLA Bruins,92542,1922
+s483,48.112,-1.6743,Route de Lorient,Rennes,FRA,Stade Rennais FC,31127,2001
+s484,43.4883,-72.4566,Royal Windsor Racecourse,Windsor,GBR,Horse Racing-use,35000,-
+s485,41.1537,-81.6374,Rubber Bowl,Akron,USA,Football-use,35202,1940
+s486,-17.8178,31.0447,Rufaro Stadium,Harare,ZWE,Dynamos FC,35000,-
+s487,40.5516,-74.4637,Rutgers Stadium,Piscataway,USA,Rutgers Scarlet Knights,52454,1994
+s488,42.0562,-87.7011,Ryan Field,Evanston,USA,Northwestern Wildcats,47130,1926
+s489,42.2061,-83.6228,Rynearson Stadium,Ypsilanti,USA,E. Michigan Eagles,30200,1969
+s490,47.6026,-122.3284,Safeco Field,Seattle,USA,Seattle Mariners,47116,1999
+s491,60.9667,25.6667,Salpausselkä,Lahti,FIN,Lahden Hiihtoseura,60000,-
+s492,22.5697,88.3697,Saltlake Stadium,Calcutta,IND,Football-use,120000,1984
+s493,36.11,-115.2118,Sam Boyd Stadium,Las Vegas,USA,UNLV Rebels,36800,1971
+s494,36.297,59.6062,Samen Stadium,Mashhad,IRN,Abomoslem Mashhad,35000,2004
+s495,42.2823,-73.8294,Sanford Stadium,Athens,USA,Georgia Bulldogs,92746,1929
+s496,37.5985,126.9783,Sang-am Stadium,Seoul,KOR,FC Seoul,64677,2001
+s497,32.5684,-92.8844,Santa Anita Park,Arcadia,USA,Horse-Racing use,85000,1934
+s498,40.4086,-3.6922,Santiago Bernabeu,Madrid,ESP,Real Madrid CF,80354,1947
+s499,1.55,110.3333,Sarawak Stadium,Kuching,MYS,Sarawak FA,40000,1997
+s500,23.0333,72.6167,Sardar Patel Stadium,Ahmedabad,IND,Rajasthan Royals,54000,1982
+s501,51.4333,6.75,Schauinsland-Reisen-Arena,Duisburg,DEU,MSV Duisburg,31000,2004
+s502,38.098,-78.3966,Scott Stadium,Charlottesville,USA,Virginia Cavaliers,61500,1931
+s503,52.6819,-7.8022,Semple Stadium,Thurles,IRL,Tipperary County,55000,1910
+s504,3.1667,101.7,Sepang F1 Circuit,Kuala Lumpur,MYS,Race-use,80000,1999
+s505,48.3667,10.8833,SGL Arena,Augsburg,DEU,FC Augsburg,30660,2009
+s506,3.0833,101.5333,Shah Alam Stadium,Shah Alam,MYS,Selangor FA,69372,1994
+s507,36.6683,116.9972,Shandong Stadium,Jinan,CHN,Shandong Luneng,43700,1988
+s508,31.0456,121.3997,Shanghai Int'l Circuit,Shanghai,CHN,Race-use,200000,2004
+s509,31.0456,121.3997,Shanghai Stadium,Shanghai,CHN,Multi-use,80000,1997
+s510,22.5333,114.1333,Shenzhen Stadium,Shenzhen,CHN,Shenzhen Yihua Jewellery,33000,1993
+s511,23.7231,90.4086,Sher-e-Bangla Mirpur,Dhaka,BGD,Dhaka Gladiators,42000,1970
+s512,29.6036,52.5388,Shiraz Stadium,Shiraz,IRN,Football-use,50000,2010
+s513,51.5167,7.45,Signal Iduna Park,Dortmund,DEU,Borussia Dortmund,81264,1974
+s514,52.0833,-1.0167,Silverstone Circuit,Silverstone,GBR,Race-use,90000,1948
+s515,47.2313,39.7233,SKA SKVO Stadion,Rostov-na-donu,RUS,SKA Rostov-na-Donu,33300,2002
+s516,36.0492,-96.0712,Skelly Field,Tulsa,USA,Tulsa Golden Hurricane,35542,1930
+s517,34.6913,135.183,Skymark Stadium,Kobe,JPN,Orix Buffaloes,35000,1988
+s518,-26.2052,28.0498,Soccer City Stadium,Johannesburg,ZAF,Kaizer Chiefs FC,91141,2009
+s519,59.3333,18.05,Solvalla Travbana,Stockholm,SWE,Horse-Racing-use,35000,1927
+s520,42.7627,-84.4427,Spartan Stadium,East Lansing,USA,Michigan State Spartans,72027,1957
+s521,39.7525,-104.9995,Sports Authority Field,Denver,USA,Denver Broncos,76125,2001
+s522,-27.758,29.9318,Sports Direct Arena,Newcastle,GBR,Newcastle United,52387,2000
+s523,51.0833,-114.0833,Spruce Meadows,Calgary,CAN,Horse-jumping-use,32000,1975
+s524,12.9833,77.5833,Sree Kanteerava Stadium,Bangalore,IND,HAL SC,40000,-
+s525,33.4468,-86.7404,St. Andrews Stadium,Birmingham,GBR,Birmingham City FC,30016,1906
+s526,47.5584,7.5733,St. Jakob Park,Basel,CHE,FC Basel,38512,2001
+s527,40.9077,-72.4178,St. Mary's Stadium,Southampton,GBR,Southampton,32000,2001
+s528,54.1833,-7.2333,St. Tiernach's Park,Clones,IRL,Monaghan County,36000,-
+s529,36.9,7.7667,Stade 19 Mai 1956,Annaba,DZA,USM Annaba,50000,-
+s530,12.65,-8,Stade 26 mars,Bamako,MLI,National Stadium,50000,2001
+s531,36.7631,3.0506,Stade 5 Juillet 1962,Algiers,DZA,MC Alger,66000,1976
+s532,35.6911,-0.6417,Stade Ahmed Zabana,Oran,DZA,MC Oran,50000,-
+s533,44.8404,-0.5805,Stade Chaban Delmas,Bordeaux,FRA,FCG Bordeaux,34327,1938
+s534,30.4,-9.6,Stade d'Agadir,Agadir,MAR,Hassania Agadir,45480,2013
+s535,0.3833,9.45,Stade d'Angondjé,Libreville,GAB,National Stadium,40000,2011
+s536,34.6867,-1.9114,Stade d'Honneur,Oujda,MAR,MC Oujda,35000,1977
+s537,48.9342,2.3548,Stade de France,Saint-denis,FRA,National Stadium,79959,1998
+s538,45.7485,4.8467,Stade de Gerland,Lyon,FRA,Olympique Lyonnais,43051,1920
+s539,6.35,2.4333,Stade de l'Amitié,Cotonou,BEN,National Stadium,35000,-
+s540,9.5092,-13.7122,Stade de l'Unité,Conakry,GIN,National Stadium,50000,2012
+s541,47.2165,-1.5524,Stade de la Beaujoire,Nantes,FRA,FC Nantes,38486,1984
+s542,43.6109,3.8772,Stade de la Mosson,Montpellier,FRA,Montpellier SC,31250,1998
+s543,-4.2592,15.2847,Stade de la Révolution,Brazzaville,COG,National Stadium,50000,-
+s544,46.9167,7.4667,Stade de Suisse,Bern,CHE,BSC Young Boys,32000,2005
+s545,-4.3,15.3,Stade des Martyrs,Kinshasa,COD,National Stadium,80000,1994
+s546,12.3703,-1.5247,Stade du 4-Août,Ouagadougou,BFA,ASFA Ouagadougou,40000,-
+s547,36.8061,10.1711,Stade El Menzah,Tunis,TUN,Club Africain,45000,1967
+s548,-11.6667,27.4667,Stade F. Kibassa Maliba,Lubumbashi,COD,AS New Soger,35000,-
+s549,50.4312,2.8332,Stade Félix Bollaert,Lens,FRA,RC Lens,41810,1998
+s550,33.5928,-7.6192,Stade Larbi Zaouli,Casablanca,MAR,TAS Casablanca,35000,1930
+s551,36.365,6.6147,Stade Mohamed-Hamlaoui,Constantine,DZA,CS/MO Constantine,40000,1973
+s552,33.5928,-7.6192,Stade Mohammed V,Casablanca,MAR,Raja Casablanca,67000,1955
+s553,34.0138,-6.8443,Stade Moulay Abdellah,Rabat,MAR,FAR Rabat,52000,1983
+s554,36.4686,2.8289,Stade Moustapha Tchaker,Blida,DZA,USM Blida,35000,-
+s555,18.0864,-15.9753,Stade National,Nouakchott,MRT,National Stadium,40000,-
+s556,43.2854,5.3761,Stade Vélodrome,Marseille,FRA,Olympique de Marseille,60031,1937
+s557,40.6833,14.7833,Stadio Arechi,Salerno,ITA,Salernitana Sport,37894,1991
+s558,43.7667,11.25,Stadio Artemio Franchi,Firenze,ITA,ACF Fiorentina,47232,1931
+s559,41.1333,16.85,Stadio della Vittoria,Bari,ITA,Multi-use,40400,-
+s560,45.4167,11.8833,Stadio Euganeo,Padova,ITA,Calcio Padova,32420,1994
+s561,46.0619,13.2422,Stadio Friuli,Udine,ITA,Udinese Calcio,30669,1976
+s562,44.4167,8.95,Stadio Luigi Ferraris,Genova,ITA,Sampdoria/Genoa,36703,1990
+s563,42.9925,-89.5679,Stadio M. Bentegodi,Verona,ITA,Hellas Verona/Chievo,39371,1963
+s564,-29.45,27.7333,Stadio Olimpico,Roma,ITA,AS Roma/SS Lazio,72698,1953
+s565,44.4833,11.3333,Stadio Renato dall'Ara,Bologna,ITA,Bologna FC 1909,36532,1927
+s566,38.1167,13.3667,Stadio Renzo Barbera,Palermo,ITA,US Città di Palermo,36980,1932
+s567,-22.3513,30.0396,Stadio San Filippo,Messina,ITA,ACR Messina,37895,2004
+s568,41.1333,16.85,Stadio San Nicola,Bari,ITA,AS Bari,58270,1990
+s569,40.8333,14.25,Stadio San Paolo,Napoli,ITA,SSC Napoli,78210,1959
+s570,40.3833,18.1833,Stadio Via del Mare,Lecce,ITA,US Lecce,33876,1966
+s571,44.8186,20.4681,Stadion Crvena Zvezda,Beograd,SRB,FK Crvena Zvezda,51328,1957
+s572,48.463,35.039,Stadion Dnipro,Dnipropetrovsk,UKR,FK Dnipro,31003,2008
+s573,51.9167,4.5,Stadion Feijenoord,Rotterdam,NLD,Feyenoord,51180,1937
+s574,52.4167,16.9667,Stadion Lecha,Poznan,POL,Lech Poznan,43090,2010
+s575,45.8,16,Stadion Maksimir,Zagreb,HRV,NK Dinamo Zagreb,38923,1912
+s576,49.9808,36.2527,Stadion Metalist,Kharkiv,UKR,FK Metalist Kharkiv,40003,2008
+s577,51.1,17.0333,Stadion Miejski,Wroclaw,POL,Slask Wroclaw,42771,2011
+s578,42.9047,133.7022,Stadion NSK Olimpiyskiy,Kiev,UKR,FK Dynamo Kyiv,70050,1948
+s579,51.1,17.0333,Stadion Olimpijski,Wroclaw,POL,Atlas Wroclaw,35000,1926
+s580,44.8186,20.4681,Stadion Partizana,Beograd,SRB,FK Partizan,30887,1951
+s581,43.5139,16.4558,Stadion Poljud,Split,HRV,HNK Hajduk Split,34448,1979
+s582,47.5,19.0833,Stadion Puskás Ferenc,Budapest,HUN,National Stadium,68976,1953
+s583,47.9917,37.7759,Stadion Shakhtar,Donetsk,UKR,FK Metalurh Donetsk,31718,1936
+s584,45.7494,21.2272,Stadionul Dan Paltinisanu,Timisoara,ROM,FC Politehnica,32000,1960
+s585,34.9769,138.3831,Stadium Ecopa,Shizuoka,JPN,Shimizu S-Pulse,51349,2001
+s586,43.5995,1.4332,Stadium Municipal,Toulouse,FRA,Toulouse FC,36369,1998
+s587,54.9119,-1.3833,Stadium of Light,Sunderland,GBR,Sunderland AFC,49000,2000
+s588,1.2931,103.8558,Stadium of Singapore,Singapore,SGP,National Stadium,55000,1973
+s589,-24.7667,30.8667,Stamford Bridge,London,GBR,Chelsea FC,41841,1997
+s590,37.5159,-84.6816,Stanford Stadium,Stanford,USA,Stanford Cardinal,50000,2006
+s591,44.8983,-76.2449,Subiaco Oval,Perth,AUS,West Coast Eagles FC,42922,1908
+s592,18.5333,73.8667,Subrata Roy Sahara Stadium,Pune,IND,Sahara Pune Warriors,55000,2011
+s593,49.4811,8.4353,Südweststadion,Ludwigshafen,DEU,SV Südwest L'hafen,41383,1950
+s594,41.0186,28.9647,Sükrü Saraçoglu Stadi,Istanbul,TUR,Fenerbahçe SK,50509,2005
+s595,23.6133,58.5933,Sultan Qaboos Complex,Muscat,OMN,National Stadium,39000,-
+s596,31.7958,-106.3762,Sun Bowl,El Paso,USA,UTEP Miners,52000,1963
+s597,33.4001,-111.929,Sun Devil Stadium,Tempe,USA,ASU Sun Devils,73379,1958
+s598,37.6861,-122.4107,Suncorp Stadium,Brisbane,AUS,Brisbane Broncos RLC,52579,2003
+s599,6.4531,3.3958,Surelere Stadium,Lagos,NGA,Multi-use,55000,1972
+s600,46.15,-60.1667,Sydney Cricket Ground,Sydney,AUS,Sydney Swans FC,44000,1851
+s601,46.15,-60.1667,Sydney Football Stadium,Sydney,AUS,Sydney Roosters RLC,45500,1988
+s602,33.3782,-86.1034,Talladega Superspeedway,Talladega,USA,Race-use,143000,1969
+s603,45.0059,-93.4305,Target Field,Minneapolis,USA,Minnesota Twins,39504,2010
+s604,45.0059,-93.4305,TCF Bank Stadium,Minneapolis,USA,Minnesota Golden Gophers,50805,2009
+s605,39.1422,117.1767,TEDA Football Stadium,Tianjin,CHN,Tianjin TEDA,37450,2004
+s606,48.15,17.1167,Tehelné Pole Stadion,Bratislava,SVK,SK Slovan Bratislava,30087,-
+s607,32.7257,-97.3214,Texas Motor Speedway,Fort Worth,USA,Race-use,154861,1997
+s608,37.6861,-122.4107,The Gabba,Brisbane,AUS,Brisbane Lions FC,42000,2005
+s609,25.2582,55.3047,The Sevens,Dubai,ARE,National Team,50000,2008
+s610,32.9672,-117.2586,Thoroughbred Club,Del Mar,USA,Horse-Racing use,44000,1937
+s611,23.1167,113.25,Tianhe Stadium,Guangzhou,CHN,Guangzhou Evergrande,60151,1987
+s612,14.1,-87.2167,Tiburcio Carias Andino,Tegucigalpa,HND,National Stadium,35000,-
+s613,30.4386,-91.1703,Tiger Stadium,Baton Rouge,USA,LSU Tigers,92400,1924
+s614,40.3953,49.8822,Tofiq Bakhramov Stadium,Baku,AZE,FK Baku,31200,1952
+s615,35.685,139.7514,Tokyo Dome,Tokyo,JPN,Tokyo Yomiuri Giants,45600,1988
+s616,35.685,139.7514,Tokyo Racecourse,Tokyo,JPN,Horse-Racing use,223000,1933
+s617,-34.5875,-58.6725,Tomás Adolfo Ducó,Buenos Aires,ARG,CA Huracán,48314,1947
+s618,51.672,39.1843,Tsentralnyi Profsoyuz,Voronezh,RUS,FK Fakel Woronezh,31743,2003
+s619,55.7887,49.1221,Tsentralnyi Stadion,Kazan,RUS,FK Rubin Kazan,30133,1960
+s620,52.9947,6.5632,TT Circuit Assen,Assen,NLD,Race-use,100000,1955
+s621,2.7297,101.9381,Tuanku Abdul Rahman,Seremban,MYS,Negeri Sembilan FA,40000,1992
+s622,41.0186,28.9647,Türk Telekom Arena,Istanbul,TUR,Galatasaray SK,52647,2011
+s623,-25.207,27.5655,Turner Field,Atlanta,USA,Atlanta Braves,50091,1997
+s624,-24.7667,30.8667,Twickenham Stadium,London,GBR,National Team,82000,1981
+s625,41.85,-87.65,U.S. Cellular Field,Chicago,USA,Chicago White Sox,40615,1991
+s626,42.9864,-78.7279,UB Stadium,Buffalo,USA,Buffalo Bulls,31000,1993
+s627,34.6913,135.183,Universiade Memorial,Kobe,JPN,Vissel Kobe,45000,1985
+s628,22.5333,114.1333,Universiade Stadium,Shenzhen,CHN,Multi-use,60000,2011
+s629,40.7988,-84.1319,Universidad San Marcos,Lima,PER,Universidad San Marcos,67469,1997
+s630,-20.45,-54.6167,Universitário P. Pedrossian,Campo Grande,BRA,EC Comercial,45000,1971
+s631,23.1167,113.25,University City Stadium,Guangzhou,CHN,Guangzhou R&F,50000,-
+s632,34.1352,-118.2416,University of Phoenix Stadium,Glendale,USA,Arizona Cardinals,63400,2006
+s633,35.0441,-106.8904,University Stadium,Albuquerque,USA,New Mexico Lobos,42000,1960
+s634,36.1473,-86.777,Vanderbilt Stadium,Nashville,USA,Vanderbilt Commodores,39730,1981
+s635,42.6833,23.3167,Vassil Levski Stadion,Sofia,BGR,National Stadium,43384,1953
+s636,34.3402,-89.4833,Vaught-Hemingway Stadium,Oxford,USA,Ole Miss Rebels,60580,1941
+s637,21.15,79.1,VCA Ground,Nagpur,IND,Cricket-use,40000,1975
+s638,51.5167,7.05,Veltins Arena,Gelsenkirchen,DEU,Schalke 04,61027,2001
+s639,32.3134,-90.172,Veterans Memorial Stadium,Jackson,USA,Jackson State Tigers,60492,1979
+s640,40.4086,-3.6922,Vicente Calderón,Madrid,ESP,Atlético de Madrid,57500,1966
+s641,33.4468,-86.7404,Villa Park,Birmingham,GBR,Aston Villa,43275,1897
+s642,-29.1211,26.214,Vodacom Park,Bloemfontein,ZAF,Free State Cheetahs,48000,1995
+s643,52.4333,10.8,Volkswagen Arena,Wolfsburg,DEU,VfL Wolfsburg,30122,2002
+s644,42.3541,-85.547,Waldo Stadium,Kalamazoo,USA,W. Michigan Broncos,30100,1939
+s645,35.6513,-82.7659,Walkers Stadium,Leicester,GBR,Leicester City,32500,2002
+s646,35.8896,-78.9244,Wallace Wade Stadium,Durham,USA,Duke Blue Devils,33941,1929
+s647,34.7465,-92.2896,War Memorial Stadium,Little Rock,USA,Arkansas Razorbacks,53727,1948
+s648,-24.7667,30.8667,Wembley Stadium,London,GBR,National Stadium,90000,2007
+s649,41.4631,-86.1701,Weserstadion,Bremen,DEU,Werder Bremen,42354,1909
+s650,41.1609,-82.2085,Westpac Stadium,Wellington,NZL,Wellington Lions RUC,36000,2000
+s651,-24.7667,30.8667,White Hart Lane,London,GBR,Tottenham Hotspur,36214,1998
+s652,49.3,19.9667,Wielka Krokiew,Zakopane,POL,TS Wisla Zakopane,40000,1925
+s653,49.0047,8.3858,Wildparkstadion,Karlsruhe,DEU,Karlsruher SC,33800,1954
+s654,39.0437,-92.2714,Williams Brice Stadium,Columbia,USA,S. Carolina Gamecocks,80250,1934
+s655,49.2553,8.8772,Wirsol Rhein-Neckar-Arena,Sinsheim,DEU,TSG 1899 Hoffenheim,30164,2009
+s656,40.4903,-80.6709,Woodbine Racetrack,Toronto,CAN,Horse-Racing use,42000,1956
+s657,39.9289,116.3883,Workers Stadium,Beijing,CHN,Beijing Guoan,66161,1959
+s658,41.85,-87.65,Wrigley Field,Chicago,USA,Chicago Cubs,41118,1914
+s659,32.0617,118.7778,Wutaisha Stadium,Nanjing,CHN,Nianjing Yoyo,35000,-
+s660,38.08,46.2919,Yadegar e Emam Stadium,Tabriz,IRN,Football-use,71000,1996
+s661,41.3094,-72.924,Yale Bowl,New Haven,USA,Yale Bulldogs,64269,1914
+s662,40.7528,-73.9725,Yankee Stadium,New York,USA,New York Yankees,52325,2009
+s663,24.4667,54.3667,Yas Marina Circuit,Abu Dhabi,ARE,Race-use,50000,2009
+s664,30.2936,120.1614,Yellow Dragon Stadium,Hangzhou,CHN,Hangzhou Greentown,52672,2000
+s665,36.0986,120.3719,Yizhong Center,Qingdao,CHN,Qingdao Jonoon FC,62000,1997
+s666,40.002,-76.6836,York Racecourse,York,GBR,Horse Racing-use,56000,1960
+s667,51.3,12.3333,Zentralstadion,Leipzig,DEU,RB Leipzig,44345,2003

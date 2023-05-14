@@ -21,10 +21,10 @@ CALL crear_usLoc('Tribuna 1', 'Grada Rubian', 'Estadio O Poste', 'adulto');
 CALL crearOferta('Playoff de Ascenso', 'Estadio O Poste', '2024-01-24 21:00:00', 'adulto', 'Tribuna 1', 'Grada Rubian');
 
 -- Creamos cliente
-INSERT INTO Cliente (dni_cliente, datos_bancarios_cliente) VALUES ('48505128', '1234-5678-9012-3456');
+INSERT INTO Cliente (dni_cliente, datos_bancarios_cliente) VALUES ('48505134', '1234-5678-9012-3456');
 
 
 
 -- Llamar al procedimiento para comprar la entrada
-CALL ComprarEntrada('48505128', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');
+CALL ComprarEntrada('48505134', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');
 

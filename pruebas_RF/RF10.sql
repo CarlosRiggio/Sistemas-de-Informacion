@@ -7,7 +7,7 @@ AND nombre_recinto_evento = 'Jack Trice Stadium mtq'
 AND fecha_evento = '2027-02-10 00:00:00';
 
 
-UPDATE Oferta SET fecha_evento_oferta = '2023-05-15 20:00:00' 
+UPDATE Oferta SET fecha_evento_oferta = '2023-05-15 01:00:00' 
 WHERE nombre_espectaculo_oferta = 'Kimi no na wa fsu' 
 AND nombre_recinto_oferta = 'Jack Trice Stadium mtq' 
 AND tipo_usuario_oferta = 'infantil' 

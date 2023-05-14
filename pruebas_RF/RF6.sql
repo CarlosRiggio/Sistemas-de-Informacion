@@ -1,6 +1,6 @@
 USE Taquilla;
 
--- CALL CrearEvento ('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'Cerrado');
+CALL CrearEvento ('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'Cerrado');
 
 
 CALL crearOferta('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'jubilado', 'Asiento 1', 'Grada Norte');
@@ -14,7 +14,7 @@ AND nombre_recinto_oferta = 'Camp Nou'
 AND localizacion_localidad_oferta = 'Asiento 1' 
 AND nombre_grada_oferta = 'Grada Norte';
 
+SELECT * FROM Evento;
 
- 
 CALL ComprarEntrada('123456789', 'jubilado', 'El Clasico', 'Camp Nou', 'Asiento 1', 'Grada Norte', '2023-05-18 08:00:00');
 

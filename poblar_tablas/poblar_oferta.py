@@ -3,8 +3,8 @@ import mysql.connector
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="juan",
-    password="1234",
+    user="riggio",
+    password="123456",
     database="Taquilla"
 )
 
@@ -30,7 +30,7 @@ for evento in eventos:
         nombre_grada = usloc[2]
         try:
             # Imprimir la línea para llamar al procedimiento almacenado
-            #print(f"CALL crearOferta('{nombre_espectaculo}', '{nombre_recinto}', '{fecha_evento}', '{tipo_usuario}', '{localizacion_localidad}', '{nombre_grada}');")
+            print(f"CALL crearOferta('{nombre_espectaculo}', '{nombre_recinto}', '{fecha_evento}', '{tipo_usuario}', '{localizacion_localidad}', '{nombre_grada}');")
 
             # Llamar y ejecutar el procedimiento almacenado
             cursor.callproc("crearOferta", (nombre_espectaculo, nombre_recinto, fecha_evento, tipo_usuario, localizacion_localidad, nombre_grada))

@@ -19,10 +19,13 @@ CALL crear_usLoc('Tribuna 1', 'Grada Rubian', 'Estadio O Poste', 'adulto');
 -- Crear la oferta con localidad deteriorada
 CALL crearOferta('Playoff de Ascenso', 'Estadio O Poste', '2024-01-24 21:00:00', 'adulto', 'Tribuna 1', 'Grada Rubian');
 
+-- Creamos cliente
+INSERT INTO Cliente (dni_cliente, datos_bancarios_cliente) VALUES ('48505128', '1234-5678-9012-3456');
+
 
 -- Llamar al procedimiento para comprar la entrada
 CALL ComprarEntrada('48505128', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');
 
 SELECT * FROM Oferta;
---Se intenta comprar la ya comprada
+-- Se intenta comprar la ya comprada
 CALL ComprarEntrada('48505128', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');

@@ -4,7 +4,8 @@
 -- Comprar varias entradas de diferente usuario y checkear el precio final de sus entradas.
 
 -- Hacemos INSERT de esto:
--- INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('QQQQQQQQQ','1234567890123456789012345678901234');
+
+INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('QQQQQQQQQ','1234567890123456789012345678901234');
 
 CALL crear_espectaculo ('Cars 2', 'Secuela de Cars', 'Rayo McQueen');
 

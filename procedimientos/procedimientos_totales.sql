@@ -571,10 +571,10 @@ DELIMITER ;
 
 INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('123456789','1234567890123456789012345678901234');
 
-INSERT INTO Usuario VALUES ('adulto', 0);
-INSERT INTO Usuario VALUES ('parado', 10);
-INSERT INTO Usuario VALUES ('jubilado', 20);
-INSERT INTO Usuario VALUES ('infantil', 30);
+INSERT INTO Usuario VALUES ('adulto', 1);
+INSERT INTO Usuario VALUES ('parado', 0.6);
+INSERT INTO Usuario VALUES ('jubilado', 0.7);
+INSERT INTO Usuario VALUES ('infantil', 0.8);
 
 CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
 CALL crear_recinto('Camp Nou', 890);
@@ -582,7 +582,7 @@ CALL crear_gradas('Grada Norte', 'Camp Nou', 100, 50);
 CALL crear_localidad('Asiento 1', 'Camp Nou', 'Grada Norte', 50, 'disponible');
 CALL CrearEvento('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'Abierto');
 CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');
-CALL crearOferta('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
+-- CALL crearOferta('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
 
 
 SELECT * FROM UsLoc;

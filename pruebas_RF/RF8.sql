@@ -22,3 +22,7 @@ CALL crearOferta('Playoff de Ascenso', 'Estadio O Poste', '2024-01-24 21:00:00',
 
 -- Llamar al procedimiento para comprar la entrada
 CALL ComprarEntrada('48505128', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');
+
+SELECT * FROM Oferta;
+--Se intenta comprar la ya comprada
+CALL ComprarEntrada('48505128', 'adulto', 'Playoff de Ascenso', 'Estadio O Poste','Tribuna 1', 'Grada Rubian', '2024-01-24 21:00:00');

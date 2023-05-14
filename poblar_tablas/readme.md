@@ -2,6 +2,10 @@ Usando faker para generar datos:
 pip install Faker mysql-connector-python 
 
 
+CREATE USER 'riggio'@'localhost' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON Taquilla.* TO 'riggio'@'localhost';
+FLUSH PRIVILEGES;
+
 
 python3 -m venv /home/juan/pyenv
 source /home/juan/pyenv/bin/activate

@@ -3,8 +3,8 @@ import mysql.connector
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="riggio",
-    password="123456",
+    user="juan",
+    password="1234",
     database="Taquilla"
 )
 
@@ -23,10 +23,18 @@ localidades = cursor.fetchall()
 for localidad in localidades:
     for tipo_usuario in ['jubilado', 'parado', 'adulto', 'infantil']:
         try:
-            cursor.callproc("crear_usLoc", (localidad[0], localidad[2], localidad[1], tipo_usuario))
+            print(f"CALL crear_usLoc('{localidad[0]}', '{localidad[2]}', '{localidad[1]}', '{tipo_usuario}');")
+
+            cursor.callproc("crear_usLoc", [localidad[0], localidad[2], localidad[1], tipo_usuario])
             connection.commit()
+
+            # Obtener el mensaje de salida del procedimiento
+            resultados = cursor.stored_results()
+            mensaje = resultados.fetchone()[0]
+            print("Mensaje de salida:", mensaje)
         except mysql.connector.IntegrityError:
             # Capturar la excepción cuando la tupla ya existe en UsLoc
+            print("Error en", localidad[0], localidad[2], localidad[1], tipo_usuario)
             pass
 
 # Cerrar el cursor y la conexión

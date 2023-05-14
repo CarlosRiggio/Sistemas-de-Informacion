@@ -20,7 +20,7 @@ for _ in range(numero_estadios):
     nombre_recinto = random.choice(nombres_recintos)
     palabra_aleatoria = ''.join(random.choice('abcdefghijklmnopqrstuvwxyz') for _ in range(3))
     nuevo_nombre = f"{nombre_recinto} {palabra_aleatoria}"
-    capacidad_estadio = random.randint(100, 100000)
+    capacidad_estadio = random.randint(100, 1000)
     nuevos_estadios.append({'Nombre': nuevo_nombre, 'Capacidad': capacidad_estadio})
 
 # Guardar los nuevos estadios en un archivo CSV

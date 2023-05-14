@@ -5,8 +5,8 @@ import datetime
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="riggio",
-    password="123456",
+    user="juan",
+    password="1234",
     database="Taquilla"
 )
 
@@ -26,7 +26,7 @@ print(espectaculos)
 print(recintos)
 # Generar eventos aleatorios para cada espectáculo
 for espectaculo in espectaculos:
-    for _ in range(4):
+    for _ in range(2):
         # Generar fecha aleatoria posterior a julio de 2023
         fecha_evento = datetime.datetime(random.randint(2024, 2027), random.randint(1, 12), random.randint(1, 28))
         estado_evento = 'abierto'

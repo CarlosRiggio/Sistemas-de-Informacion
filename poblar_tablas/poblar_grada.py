@@ -5,8 +5,8 @@ import mysql.connector
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="riggio",
-    password="123456",
+    user="juan",
+    password="1234",
     database="Taquilla"
 )
 
@@ -35,7 +35,7 @@ for recinto in recintos:
         if nombre_grada not in gradas_generadas:
             gradas_generadas.add(nombre_grada)
             
-            num_localidades = random.randint(5, 10)
+            num_localidades = random.randint(1, 50)
             precio_grada = random.randint(10, 100)
             
             cursor = connection.cursor()

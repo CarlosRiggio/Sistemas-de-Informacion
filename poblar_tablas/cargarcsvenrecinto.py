@@ -3,8 +3,8 @@ import mysql.connector
 
 # Configura la conexión a la base de datos
 config = {
-    'user': 'riggio',
-    'password': '123456',
+    'user': 'juan',
+    'password': '1234',
     'host': 'localhost',
     'database': 'Taquilla'
 }

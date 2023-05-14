@@ -3,8 +3,8 @@ import mysql.connector
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="riggio",
-    password="123456",
+    user="juan",
+    password="1234",
     database="Taquilla"
 )
 
@@ -39,6 +39,7 @@ for evento in eventos:
             
         except mysql.connector.IntegrityError:
             # Capturar la excepción cuando la tupla ya existe en UsLoc
+            print("error en", nombre_espectaculo, nombre_recinto, fecha_evento, tipo_usuario, localizacion_localidad, nombre_grada)
             pass
 
 # Cerrar el cursor y la conexión

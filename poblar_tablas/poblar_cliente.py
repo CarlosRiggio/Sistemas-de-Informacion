@@ -7,8 +7,8 @@ numero_tuplas = 10
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="riggio",
-    password="123456",
+    user="juan",
+    password="1234",
     database="Taquilla"
 )
 

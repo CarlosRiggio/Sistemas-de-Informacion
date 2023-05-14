@@ -18,9 +18,10 @@ print(eventos)
 # Obtener los registros de UsLoc que tienen localidades disponibles
 cursor.execute("SELECT tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc FROM UsLoc WHERE (tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc) IN (SELECT tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc FROM Localidad WHERE estado_localidad = 'disponible')")
 uslocs = cursor.fetchall()
-print(uslocs)
+
 # Crear una oferta para cada UsLoc en eventos abiertos y localidades disponibles
 for evento in eventos:
+    print("Creando oferta para evento", evento[0], "en", evento[1], "el", evento[2])
     for usloc in uslocs:
         nombre_espectaculo = evento[0]
         nombre_recinto = evento[1]

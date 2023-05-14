@@ -1,7 +1,7 @@
 import csv
 import random
 
-numero_espectaculos = 100
+numero_espectaculos = 3
 archivo_csv = 'pelis_limpio.csv'
 
 # Leer el archivo CSV y obtener los nombres de los espectáculos

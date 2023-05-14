@@ -4,8 +4,8 @@ import random
 # Conexión a la base de datos
 connection = mysql.connector.connect(
     host="localhost",
-    user="juan",
-    password="1234",
+    user="riggio",
+    password="123456",
     database="Taquilla"
 )
 
@@ -48,11 +48,15 @@ for entrada in entradas:
     nombre_grada = entrada[3]
     fecha_evento = entrada[4]
 
-    # Llamar al procedimiento almacenado para realizar la compra de la entrada
-    cursor.callproc("ComprarEntrada", (dni_cliente, tipo_usuario, nombre_espectaculo,
-                                       nombre_recinto, localizacion_localidad,
-                                       nombre_grada, fecha_evento))
-    connection.commit()
+    try:
+        # Llamar al procedimiento almacenado para realizar la compra de la entrada
+        cursor.callproc("ComprarEntrada", (dni_cliente, tipo_usuario, nombre_espectaculo,
+                                        nombre_recinto, localizacion_localidad,
+                                        nombre_grada, fecha_evento))
+        
+        connection.commit()
+    except mysql.connector.errors.DatabaseError as e:
+            print("Error al crear la compra:", e)
 
 # Cerrar el cursor y la conexión
 cursor.close()

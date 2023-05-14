@@ -1,7 +1,7 @@
 import csv
 import random
 
-numero_estadios = 100
+numero_estadios = 3
 # Archivo CSV con los nombres y capacidades de los recintos
 archivo_csv = 'nombres_capacidad.csv'
 

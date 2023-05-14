@@ -26,7 +26,7 @@ for recinto in recintos:
     # Conjunto para almacenar los nombres de las gradas generadas
     gradas_generadas = set()
     nombre_recinto = recinto[0]
-    num_gradas = random.randint(4, 10)
+    num_gradas = random.randint(1, 3)
     
     while len(gradas_generadas) < num_gradas:
         nombre_grada = "Grada " + random.choice(adjetivos) + " " + random.choice(direcciones)
@@ -35,7 +35,7 @@ for recinto in recintos:
         if nombre_grada not in gradas_generadas:
             gradas_generadas.add(nombre_grada)
             
-            num_localidades = random.randint(100, 1000)
+            num_localidades = random.randint(5, 10)
             precio_grada = random.randint(10, 100)
             
             cursor = connection.cursor()

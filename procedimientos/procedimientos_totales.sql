@@ -1,9 +1,36 @@
 CREATE DATABASE IF NOT EXISTS Taquilla;
 USE Taquilla;
 
+SET FOREIGN_KEY_CHECKS=0;
+
+
+
+-- Drop Procedures
+DROP PROCEDURE IF EXISTS ComprarEntrada;
+DROP PROCEDURE IF EXISTS CalcularPrecio;
+DROP PROCEDURE IF EXISTS ModificarEstadoEvento;
+DROP PROCEDURE IF EXISTS cambiarestadoLocalidadOfertada;
+DROP PROCEDURE IF EXISTS AgregarLocalidad;
+DROP PROCEDURE IF EXISTS EliminarLocalidad;
+DROP PROCEDURE IF EXISTS obtener_eventos_por_estado;
+DROP PROCEDURE IF EXISTS eliminar_gradas;
+DROP PROCEDURE IF EXISTS crear_recinto;
+DROP PROCEDURE IF EXISTS crearOferta;
+DROP PROCEDURE IF EXISTS crear_gradas;
+DROP PROCEDURE IF EXISTS crear_espectaculo;
+DROP PROCEDURE IF EXISTS CrearEvento;
+DROP PROCEDURE IF EXISTS anular_compra;
+DROP PROCEDURE IF EXISTS crear_usLoc;
+DROP PROCEDURE IF EXISTS crear_localidad;
+
+DROP PROCEDURE IF EXISTS Error;
+
+
+
+
+
 DELIMITER //
 
-DROP PROCEDURE IF EXISTS crear_espectaculo//
 
 CREATE PROCEDURE crear_espectaculo(
     IN nombre_espectaculo_in VARCHAR(50),
@@ -11,34 +38,14 @@ CREATE PROCEDURE crear_espectaculo(
     IN participantes_espectaculo_in VARCHAR(50)
 )
 BEGIN
-    CREATE TABLE IF NOT EXISTS Espectaculo (
-        nombre_espectaculo VARCHAR(50) PRIMARY KEY,
-        descripcion_espectaculo VARCHAR(50),
-        participantes_espectaculo VARCHAR(50)
-    );
 
     INSERT INTO Espectaculo (nombre_espectaculo, descripcion_espectaculo, participantes_espectaculo)
     VALUES (nombre_espectaculo_in, descripcion_espectaculo_in, participantes_espectaculo_in);
 
-    SELECT 'La tabla Espectaculo se ha creado correctamente y el espectáculo ha sido insertado.' AS mensaje;
+    -- SELECT 'La tabla Espectaculo se ha creado correctamente y el espectáculo ha sido insertado.' AS mensaje;
 END//
 
-DELIMITER ;
 
-
-
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
-
-DROP TABLE IF EXISTS Recinto;
-CREATE TABLE Recinto (
-    nombre_recinto VARCHAR(50) PRIMARY KEY,
-    localidades_recinto INT
-);
-
-DELIMITER //
-
-DROP PROCEDURE IF EXISTS crear_recinto//
 
 CREATE PROCEDURE crear_recinto(
     IN nombre_recinto_in VARCHAR(50),
@@ -48,18 +55,10 @@ BEGIN
     INSERT INTO Recinto (nombre_recinto, localidades_recinto)
     VALUES (nombre_recinto_in, localidades_recinto_in);
 
-    SELECT 'El recinto ha sido creado correctamente.' AS mensaje;
-END//
-
-DELIMITER ;
+    -- SELECT 'El recinto ha sido creado correctamente.' AS mensaje;
+END //
 
 
-
-USE Taquilla;
-
-DELIMITER //
-
-DROP PROCEDURE IF EXISTS crear_gradas//
 
 CREATE PROCEDURE crear_gradas(
     IN nombre_grada_in VARCHAR(50), 
@@ -82,17 +81,8 @@ FROM Grada WHERE nombre_recinto_grada = nombre_recinto_grada_in;
 
 IF total_localidades_reservadas + num_localidades_reservar_grada_in > localidades_recinto_proc THEN
     SIGNAL SQLSTATE '45001' 
-        SET MESSAGE_TEXT = 'No hay tanto aforo';
+    SET MESSAGE_TEXT = 'No hay tanto aforo';
 ELSE
-    -- Crear la tabla si no existe y hacer la inserción
-    CREATE TABLE IF NOT EXISTS Grada (
-        nombre_grada VARCHAR(50),
-        nombre_recinto_grada VARCHAR(50),
-        num_localidades_reservar_grada INT,
-        precio_grada INT,
-        FOREIGN KEY(nombre_recinto_grada) REFERENCES Recinto(nombre_recinto),
-        PRIMARY KEY(nombre_grada, nombre_recinto_grada)
-    );
     
     INSERT INTO Grada(nombre_grada, nombre_recinto_grada, num_localidades_reservar_grada, precio_grada) 
     VALUES (nombre_grada_in, nombre_recinto_grada_in, num_localidades_reservar_grada_in, precio_grada_in);
@@ -100,22 +90,7 @@ END IF;
 
 END//
 
-DELIMITER ;
-
-
-
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
     
-CREATE TABLE IF NOT EXISTS Localidad (
-        localizacion_localidad VARCHAR(50),
-        nombre_recinto_localidad VARCHAR(50),
-        nombre_grada_localidad VARCHAR(50),
-        precio_base_localidad INT,
-        estado_localidad ENUM('disponible', 'no disponible')
-    );
-DELIMITER //
-DROP PROCEDURE IF EXISTS crear_localidad;
 
 CREATE PROCEDURE crear_localidad(
     IN p_localizacion VARCHAR(50), 
@@ -149,7 +124,7 @@ BEGIN
             VALUES (p_localizacion, p_nombre_recinto, p_nombre_grada, p_precio_base, p_estado);
         
             -- Imprimir el número de tuplas con el mismo recinto y la misma grada
-            SELECT CONCAT("La localidad ha sido creada exitosamente. Hay ", num_tuplas+1, " localidades en la misma grada y el mismo recinto.") AS mensaje;
+            -- SELECT CONCAT("La localidad ha sido creada exitosamente. Hay ", num_tuplas+1, " localidades en la misma grada y el mismo recinto.") AS mensaje;
         ELSE
             SELECT "Error: No se pueden reservar más localidades en esta grada." AS mensaje;
         END IF;
@@ -158,19 +133,6 @@ BEGIN
     END IF;
 END//
 
-DELIMITER ;
-
-
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
-
-DROP PROCEDURE IF EXISTS CrearEvento;
-
-DROP PROCEDURE IF EXISTS Error;
-
-
-
-DELIMITER //
 
 CREATE PROCEDURE Error (
     ERRNO BIGINT UNSIGNED,
@@ -197,21 +159,6 @@ CREATE PROCEDURE CrearEvento (
 )
 
 BEGIN
-    -- Pasos
-    -- 
-    --  1. Declaramos variables
-    --  2. Checkeamos si existen el Recinto y el Espectaculo
-    --  3. Check Fecha ? T-T
-    --  4. Check dato Estado en los datos de entrada
-    --  5. Hacemos el insert de los datos de entrada
-    --  6. Gestion de las Localidades del Evento (JAJA salu2)
-
-
-    -- TODO: 1.
-    -- DECLARE numEventoNuevo INIT;
-    -- DECLARE numLocalicades INIT;
-    -- DECLARE cursorLocalidades
-
 
     -- 2.
     IF ( (SELECT EXISTS(SELECT * FROM Espectaculo WHERE nombre_espectaculo = nombre_espectaculo_IN) ) = '') THEN
@@ -240,19 +187,8 @@ BEGIN
     INSERT INTO Evento (nombre_espectaculo_evento, nombre_recinto_evento, fecha_evento, estado_evento)
     VALUE (nombre_espectaculo_IN, nombre_recinto_IN, fecha_evento_IN, estado_evento_IN);
 
-    -- TODO: 6.
-    
 END //
 
-DELIMITER ;
-
-
-
-USE Taquilla;
-
-DELIMITER //
-
-DROP PROCEDURE IF EXISTS crear_usLoc;
 
 CREATE PROCEDURE crear_usLoc(
     IN localizacion_localidad_in VARCHAR(50),
@@ -274,13 +210,6 @@ BEGIN
     END IF;
 END//
 
-DELIMITER ;
-
-
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
-
-DELIMITER //
 
 
 DROP PROCEDURE IF EXISTS crearOferta//
@@ -303,19 +232,6 @@ BEGIN
     
     SET valido = FALSE;
     SET done = FALSE;
-    
-    CREATE TABLE IF NOT EXISTS Oferta(
-        nombre_espectaculo_oferta VARCHAR(50),
-        nombre_recinto_oferta VARCHAR(50),
-        tipo_usuario_oferta ENUM('jubilado', 'parado', 'adulto', 'infantil'),
-        localizacion_localidad_oferta VARCHAR(50),
-        nombre_grada_oferta VARCHAR(50),
-        fecha_evento_oferta DATETIME,
-        estado_localidad_oferta ENUM('pre-reservado', 'reservado', 'deteriorado', 'libre'),
-        FOREIGN KEY(tipo_usuario_oferta, localizacion_localidad_oferta, nombre_grada_oferta, nombre_recinto_oferta) 
-        REFERENCES UsLoc(tipo_usuario_usloc, localizacion_localidad_usloc, nombre_grada_usloc, nombre_recinto_usloc),
-        PRIMARY KEY(nombre_espectaculo_oferta, nombre_recinto_oferta, tipo_usuario_oferta, localizacion_localidad_oferta, nombre_grada_oferta)
-    );
     
     SELECT nombre_espectaculo_evento INTO consulta FROM Evento WHERE nombre_recinto_evento = nombreRecinto AND nombre_espectaculo_evento = nombreEspectaculo AND fecha_evento = fechaEvento;
     SELECT estado_localidad INTO localidad FROM Localidad WHERE nombre_recinto_localidad = nombreRecinto AND nombre_grada_localidad = nombreGrada AND localizacion_localidad = localizacionLocalidad;
@@ -350,35 +266,12 @@ BEGIN
         INSERT INTO Oferta VALUES (nombreEspectaculo, nombreRecinto, tipoUsuarioOfertado, localizacionLocalidad, nombreGrada, fechaEvento, 'libre');
     END IF;
 END //
-DELIMITER ;
-----------------------------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
-
-SET FOREIGN_KEY_CHECKS=0;
-
-DROP PROCEDURE IF EXISTS ComprarEntrada;
-DROP PROCEDURE IF EXISTS CalcularPrecio;
-DROP PROCEDURE IF EXISTS ttt;
 
 
-DELIMITER //
-
--- CREATE PROCEDURE ttt ()
--- BEGIN
---     DECLARE precio FLOAT;
---     -- CALL CalcularPrecio("Grada Norte", "Camp Nou", "parado", "Romero", "Camp Nou", "Grada Norte", precio);
---     CALL CalcularPrecio ("Grada Norte", "Camp Nou", "Romero", "parado", precio);
---     SELECT precio AS message;
--- END //
 
 
 
 CREATE PROCEDURE CalcularPrecio (
-
-    -- Datos Grada      ---> IncrementoPrecio
-    -- Datos Localidad  ---> PrecioBase
-    -- Datos Usuario    ---> DescuentoPrecio
 
     IN nombreGrada VARCHAR(50),
     IN nombreRecinto VARCHAR(50),
@@ -522,18 +415,6 @@ BEGIN
 
 END //
 
-DELIMITER ;
-
--------------------------------------------------------------------------------
-
-CREATE DATABASE IF NOT EXISTS Taquilla;
-USE Taquilla;
-
-USE Taquilla;
-
-DELIMITER //
-
-DROP PROCEDURE IF EXISTS anular_compra;
 
 CREATE PROCEDURE anular_compra(
     IN dni_cliente VARCHAR(50), 
@@ -567,14 +448,15 @@ BEGIN
     AND estado_localidad_oferta = 'pre-reservado';
 END//
 
+
 DELIMITER ;
 
-INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('123456789','1234567890123456789012345678901234');
+-- INSERT INTO Cliente(dni_cliente, datos_bancarios_cliente) VALUES ('123456789','1234567890123456789012345678901234');
 
-INSERT INTO Usuario VALUES ('adulto', 1);
-INSERT INTO Usuario VALUES ('parado', 0.6);
-INSERT INTO Usuario VALUES ('jubilado', 0.7);
-INSERT INTO Usuario VALUES ('infantil', 0.8);
+-- INSERT INTO Usuario VALUES ('adulto', 1);
+-- INSERT INTO Usuario VALUES ('parado', 0.6);
+-- INSERT INTO Usuario VALUES ('jubilado', 0.7); 
+-- INSERT INTO Usuario VALUES ('infantil', 0.8);
 
 -- CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
 -- CALL crear_recinto('Camp Nou', 890);

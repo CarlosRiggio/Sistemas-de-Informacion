@@ -580,8 +580,8 @@ END//
 DELIMITER ;
 
 CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
-CALL crear_recinto('Camp Nou', 89000);
-CALL crear_gradas('Grada Norte', 'Camp Nou', 10000, 50);
+CALL crear_recinto('Camp Nou', 8900);
+CALL crear_gradas('Grada Norte', 'Camp Nou', 1000, 50);
 CALL crear_localidad('Asiento 1', 'Camp Nou', 'Grada Norte', 50, 'disponible');
 CALL CrearEvento('El Clasico', 'Camp Nou', '2023-12-12 20:00:00', 'Abierto');
 CALL crear_usLoc('Asiento 1', 'Grada Norte', 'Camp Nou', 'adulto');

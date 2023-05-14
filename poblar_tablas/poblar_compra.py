@@ -28,9 +28,15 @@ cursor.execute("""
                       AND o.localizacion_localidad_oferta = u.localizacion_localidad_usloc
                       AND o.nombre_grada_oferta = u.nombre_grada_usloc
                       AND o.nombre_recinto_oferta = u.nombre_recinto_usloc
+    WHERE o.estado_localidad_oferta = 'libre'
 """)
 entradas = cursor.fetchall()
-print(entradas)
+
+# Verificar si hay ofertas disponibles
+if len(entradas) == 0:
+    print("No hay ofertas disponibles para comprar.")
+    exit()
+
 # Generar y ejecutar las compras de entradas
 for entrada in entradas:
     cliente = random.choice(clientes)  # Seleccionar un cliente al azar

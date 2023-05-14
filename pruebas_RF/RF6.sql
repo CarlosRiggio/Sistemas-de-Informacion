@@ -1,12 +1,20 @@
 USE Taquilla;
 
+-- CALL CrearEvento ('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'Cerrado');
 
---Creamos el evento que va a estar cerrado para asegurarnos
 
-CALL crear_espectaculo('El Clasico', 'El partido del año', 'Barca, Real Madrid');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'jubilado', 'Asiento 1', 'Grada Norte');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'parado', 'Asiento 1', 'Grada Norte');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'adulto', 'Asiento 1', 'Grada Norte');
+CALL crearOferta('El Clasico', 'Camp Nou', '2023-05-18 08:00:00', 'infantil', 'Asiento 1', 'Grada Norte');
 
-CALL CrearEvento ("El Clasico", "Camp Nou", "2023-5-12 5:00:00", "Cerrado");
+SELECT * FROM Oferta 
+WHERE nombre_espectaculo_oferta = 'El Clasico' 
+AND nombre_recinto_oferta = 'Camp Nou' 
+AND localizacion_localidad_oferta = 'Asiento 1' 
+AND nombre_grada_oferta = 'Grada Norte';
 
---Intenta comprar una entrada de un evento cerrado
 
-CALL ComprarEntrada('97780491', 'jubilado', 'El Clasico', '2023-05-15 01:00:00', 'Suelo 99', 'Grada Norte', 'Camp Nou');
+ 
+CALL ComprarEntrada('123456789', 'jubilado', 'El Clasico', 'Camp Nou', 'Asiento 1', 'Grada Norte', '2023-05-18 08:00:00');
+
